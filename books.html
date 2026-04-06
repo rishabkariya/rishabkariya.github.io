@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books – Rishab Kariya</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="blogs.html" class="nav-link">Blogs</a>
+        <a href="books.html" class="nav-link active">Books</a>
+        <div class="dropdown" id="moreDropdown">
+          <a href="#" class="nav-link" id="moreBtn">More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px;display:inline;vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="index.html#skills" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Skills
+            </a>
+            <a href="index.html#certifications" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              Certifications
+            </a>
+            <a href="Rishab_Kariya_Resume_v2.pdf" target="_blank" class="dropdown-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Resume
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="projects-header section">
+      <p class="projects-subtitle">A collection of books that have shaped my perspective on markets, systems, and the world.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="filter-tabs" id="bookFilterTabs">
+      <button class="filter-tab active" data-category="all">All</button>
+      <button class="filter-tab" data-category="econ-macro">Economics & Macro</button>
+      <button class="filter-tab" data-category="trading-markets">Trading & Markets</button>
+      <button class="filter-tab" data-category="business">Business</button>
+      <button class="filter-tab" data-category="philosophy">Philosophy & Decision</button>
+      <button class="filter-tab" data-category="tech">Tech & Systems</button>
+    </div>
+
+    <div class="books-grid" id="booksGrid">
+      <!-- Economics & Macro -->
+      <div class="book-card" data-categories="econ-macro">
+        <img src="assets/books/Economics & Macro/the ascent of money.jpg" alt="The Ascent of Money" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The Ascent of Money</div>
+          <div class="book-author">Niall Ferguson</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="econ-macro">
+        <img src="assets/books/Economics & Macro/the changing world order.jpg" alt="The Changing World Order" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Changing World Order</div>
+          <div class="book-author">Ray Dalio</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="econ-macro">
+        <img src="assets/books/Economics & Macro/the price of tomorow.jpg" alt="The Price of Tomorrow" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The Price of Tomorrow</div>
+          <div class="book-author">Jeff Booth</div>
+        </div>
+      </div>
+
+      <!-- Trading & Markets -->
+      <div class="book-card" data-categories="trading-markets">
+        <img src="assets/books/Trading & Markets/flash boys.jpg" alt="Flash Boys" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Flash Boys</div>
+          <div class="book-author">Michael Lewis</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="trading-markets">
+        <img src="assets/books/Trading & Markets/inside the black box.jpg" alt="Inside the Black Box" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Inside the Black Box</div>
+          <div class="book-author">Rishi K. Narang</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="trading-markets">
+        <img src="assets/books/Trading & Markets/the man who solved the markets.jpg" alt="The Man Who Solved the Market" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Man Who Solved Market</div>
+          <div class="book-author">Gregory Zuckerman</div>
+        </div>
+      </div>
+
+      <!-- Business -->
+      <div class="book-card" data-categories="business">
+        <img src="assets/books/business/71qBbN0ZUhL.jpg" alt="Zero to One" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Zero to One</div>
+          <div class="book-author">Peter Thiel</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="business">
+        <img src="assets/books/business/the polyster prince.jpg" alt="The Polyester Prince" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The Polyester Prince</div>
+          <div class="book-author">Hamish McDonald</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="business">
+        <img src="assets/books/business/the world for sale.jpg" alt="The World for Sale" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The World for Sale</div>
+          <div class="book-author">Javier Blas & Jack Farchy</div>
+        </div>
+      </div>
+
+      <!-- Philosophy & Decision Making -->
+      <div class="book-card" data-categories="philosophy">
+        <img src="assets/books/philosophy and decision making/the alchemist.jpeg" alt="The Alchemist" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The Alchemist</div>
+          <div class="book-author">Paulo Coelho</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="philosophy">
+        <img src="assets/books/philosophy and decision making/the almanack of naval ravikant.jpg" alt="The Almanack of Naval Ravikant" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Almanack of Naval</div>
+          <div class="book-author">Eric Jorgenson</div>
+        </div>
+      </div>
+
+      <!-- Tech & Systems -->
+      <div class="book-card" data-categories="tech">
+        <img src="assets/books/tech/the infinite machine.jpg" alt="The Infinite Machine" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">The Infinite Machine</div>
+          <div class="book-author">Camila Russo</div>
+        </div>
+      </div>
+      <div class="book-card" data-categories="tech">
+        <img src="assets/books/tech/thiking in systems.jpg" alt="Thinking in Systems" class="book-image">
+        <div class="book-overlay">
+          <div class="book-title">Thinking in Systems</div>
+          <div class="book-author">Donella Meadows</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-text">
+        © 2026 Rishab Kariya
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
