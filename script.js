@@ -4,7 +4,7 @@
   const html = document.documentElement;
 
   // Load saved theme or default to dark
-  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+  const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
   if (savedTheme === 'dark') {
     html.setAttribute('data-theme', 'dark');
     updateThemeIcons('dark');
