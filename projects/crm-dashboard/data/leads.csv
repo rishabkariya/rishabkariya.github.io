@@ -1,0 +1,25 @@
+lead_id,company,industry,source,stage,owner,deal_value_inr,probability_pct,created_month
+L001,Orbit Packaging,Manufacturing,Website,Lead In,Aman,850000,20,Apr
+L002,Northline Components,Industrial,LinkedIn,Qualified,Neha,1200000,35,Apr
+L003,Bright Retail Systems,Retail,Referral,Proposal,Rahul,650000,60,Apr
+L004,Urban Care Labs,Healthcare,Email Campaign,Discovery,Sana,1400000,45,May
+L005,Vertex Foods,FMCG,Channel Partner,Negotiation,Arjun,2200000,80,May
+L006,Delta Buildtech,Construction,Website,Lost,Priya,900000,0,May
+L007,Macro Print Solutions,Manufacturing,Trade Show,Qualified,Aman,1750000,40,Jun
+L008,Clearwave Logistics,Logistics,Referral,Discovery,Neha,950000,50,Jun
+L009,Hexa Automation,Industrial,LinkedIn,Won,Rahul,2600000,100,Jun
+L010,Prism Office Interiors,Corporate,Email Campaign,Lead In,Sana,480000,15,Jul
+L011,TruMeds Distributors,Healthcare,Website,Proposal,Arjun,1100000,65,Jul
+L012,Goldline Petro Services,Energy,Channel Partner,Negotiation,Priya,3000000,85,Jul
+L013,Axis Safety Equipments,Industrial,Trade Show,Discovery,Aman,1300000,55,Aug
+L014,Mint Fresh Foods,FMCG,Referral,Qualified,Neha,980000,35,Aug
+L015,Apex Cold Chain,Logistics,LinkedIn,Discovery,Rahul,1600000,50,Aug
+L016,Skylark Textiles,Manufacturing,Website,Won,Sana,1850000,100,Sep
+L017,Civic Infra Controls,Construction,Trade Show,Proposal,Arjun,1450000,60,Sep
+L018,Nova Surgical Network,Healthcare,Referral,Negotiation,Priya,2100000,78,Sep
+L019,Bluebay Consumer,FMCG,Email Campaign,Lead In,Aman,520000,18,Oct
+L020,Vector Process Engineers,Industrial,LinkedIn,Qualified,Neha,1900000,42,Oct
+L021,Aria Hospitality Supply,Hospitality,Website,Discovery,Rahul,870000,48,Oct
+L022,Pulse Diagnostics,Healthcare,Referral,Proposal,Sana,1550000,62,Nov
+L023,Firstmile Distribution,Logistics,Channel Partner,Negotiation,Arjun,2400000,82,Nov
+L024,Mesa Fabtech,Manufacturing,Trade Show,Won,Priya,2750000,100,Nov

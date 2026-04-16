@@ -1,0 +1,6 @@
+from_stage,to_stage,conversion_rate_pct,avg_days_in_stage,stale_leads
+Lead In,Qualified,62,8,3
+Qualified,Discovery,71,11,2
+Discovery,Proposal,58,14,4
+Proposal,Negotiation,64,10,2
+Negotiation,Won,43,16,3
