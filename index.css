@@ -385,6 +385,7 @@ body::after {
 }
 
 .avatar-wrapper {
+  display: none;
   flex-shrink: 0;
   position: relative;
 }
