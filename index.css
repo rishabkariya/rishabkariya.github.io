@@ -21,9 +21,9 @@
   --tag-text: #3f3f46;
   --dot-color: rgba(0, 0, 0, 0.08);
   --line-color: rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
   --verified-blue: #1d9bf0;
   --status-green: #22c55e;
   --github-l0: #ebedf0;
@@ -33,7 +33,7 @@
   --github-l4: #216e39;
   --quote-bg: #f0f4ff;
   --footer-bg: #f0f2f5;
-  --card-hover-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  --card-hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
@@ -53,14 +53,14 @@
   --tag-text: #a1a1aa;
   --dot-color: rgba(255, 255, 255, 0.03);
   --line-color: rgba(255, 255, 255, 0.02);
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
   --status-green: #a1a1aa;
   --verified-blue: #a1a1aa;
   --quote-bg: #111113;
   --footer-bg: #09090b;
-  --card-hover-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  --card-hover-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] .project-image-placeholder {
@@ -74,7 +74,9 @@
 }
 
 /* ===== RESET & BASE ===== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -112,13 +114,11 @@ body::after {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    transparent,
-    transparent 80px,
-    var(--line-color) 80px,
-    var(--line-color) 81px
-  );
+  background-image: repeating-linear-gradient(-45deg,
+      transparent,
+      transparent 80px,
+      var(--line-color) 80px,
+      var(--line-color) 81px);
   pointer-events: none;
   z-index: 0;
 }
@@ -315,7 +315,8 @@ body::after {
   opacity: 0;
   transform: translateY(16px);
   animation: fadeInUp 0.5s ease forwards;
-  scroll-margin-top: 80px; /* Offset for fixed header anchor jumps */
+  scroll-margin-top: 80px;
+  /* Offset for fixed header anchor jumps */
 }
 
 .section:last-of-type {
@@ -329,14 +330,37 @@ body::after {
   }
 }
 
-.section:nth-child(1) { animation-delay: 0.05s; }
-.section:nth-child(2) { animation-delay: 0.1s; }
-.section:nth-child(3) { animation-delay: 0.15s; }
-.section:nth-child(4) { animation-delay: 0.2s; }
-.section:nth-child(5) { animation-delay: 0.25s; }
-.section:nth-child(6) { animation-delay: 0.3s; }
-.section:nth-child(7) { animation-delay: 0.35s; }
-.section:nth-child(8) { animation-delay: 0.4s; }
+.section:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.section:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.section:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.section:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+.section:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.section:nth-child(6) {
+  animation-delay: 0.3s;
+}
+
+.section:nth-child(7) {
+  animation-delay: 0.35s;
+}
+
+.section:nth-child(8) {
+  animation-delay: 0.4s;
+}
 
 .section-title {
   font-family: 'Inter', sans-serif;
@@ -400,8 +424,15 @@ body::after {
 }
 
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
 }
 
 .view-count {
@@ -502,7 +533,9 @@ body::after {
 }
 
 @keyframes spin-slow {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .music-art-inner {
@@ -661,10 +694,21 @@ body::after {
   background: var(--github-l0);
 }
 
-.github-cell.l1 { background: var(--github-l1); }
-.github-cell.l2 { background: var(--github-l2); }
-.github-cell.l3 { background: var(--github-l3); }
-.github-cell.l4 { background: var(--github-l4); }
+.github-cell.l1 {
+  background: var(--github-l1);
+}
+
+.github-cell.l2 {
+  background: var(--github-l2);
+}
+
+.github-cell.l3 {
+  background: var(--github-l3);
+}
+
+.github-cell.l4 {
+  background: var(--github-l4);
+}
 
 .github-footer {
   display: flex;
@@ -786,7 +830,7 @@ body::after {
   margin-top: 2px;
 }
 
-.timeline-meta span + span::before {
+.timeline-meta span+span::before {
   content: '|';
   margin-right: 8px;
 }
@@ -1079,8 +1123,17 @@ body::after {
 }
 
 @keyframes float-zzz {
-  0%, 100% { transform: translateY(0); opacity: 0.5; }
-  50% { transform: translateY(-4px); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
 }
 
 .pixel-cat svg {
@@ -1115,7 +1168,8 @@ body::after {
   flex-wrap: wrap;
   gap: 8px;
   position: sticky;
-  top: 56px; /* height of the fixed header */
+  top: 56px;
+  /* height of the fixed header */
   z-index: 90;
   background: var(--bg-primary);
   padding: 16px 0;
@@ -1170,6 +1224,8 @@ body::after {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 16px;
@@ -1206,6 +1262,8 @@ body::after {
 }
 
 .project-body {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -1245,7 +1303,7 @@ body::after {
 .project-actions {
   display: flex;
   border-top: 1px solid var(--border-color);
-  margin: 0 -20px -20px;
+  margin-top: auto;
 }
 
 .project-action {
@@ -1267,7 +1325,7 @@ body::after {
   background: var(--tag-bg);
 }
 
-.project-action + .project-action {
+.project-action+.project-action {
   border-left: 1px solid var(--border-color);
 }
 
@@ -1279,7 +1337,7 @@ body::after {
 /* ===== RESPONSIVE / MOBILE ===== */
 @media (max-width: 768px) {
 
-  
+
   .section {
     padding: 32px 0;
   }
@@ -1288,7 +1346,7 @@ body::after {
     gap: 20px;
     padding: 64px 0 20px;
   }
-  
+
   .avatar {
     width: 80px;
     height: 80px;
@@ -1318,7 +1376,7 @@ body::after {
     gap: 4px;
     flex-wrap: nowrap;
   }
-  
+
   .nav-link {
     padding: 6px 4px;
     font-size: 0.72rem;
@@ -1376,9 +1434,10 @@ body::after {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 /* ===== BOOKS PAGE ===== */
 .books-grid {
   display: grid;
@@ -1421,7 +1480,7 @@ body::after {
 .book-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

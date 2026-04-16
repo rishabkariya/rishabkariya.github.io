@@ -212,6 +212,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
   const tabs = tabsContainer.querySelectorAll('.filter-tab');
   const projects = projectsGrid.querySelectorAll('.project-card');
+  const emptyState = document.getElementById('projectsEmptyState');
   
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -221,6 +222,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       tab.classList.add('active');
       
       const selectedCategory = tab.getAttribute('data-category');
+      let visibleCount = 0;
       
       // Filter projects
       projects.forEach(project => {
@@ -231,6 +233,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         if (selectedCategory === 'all' || categories.includes(selectedCategory)) {
           project.style.display = 'block';
+          visibleCount++;
           // Briefly reset animation on newly visible items
           project.style.animation = 'none';
           project.offsetHeight; // trigger reflow
@@ -241,6 +244,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           project.style.display = 'none';
         }
       });
+
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.style.display = 'block';
+          emptyState.style.animation = 'fadeInUp 0.5s ease forwards';
+        } else {
+          emptyState.style.display = 'none';
+        }
+      }
     });
   });
 })();

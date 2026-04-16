@@ -1,0 +1,45 @@
+employee_id,name,department,location,join_date,exit_date,salary,status,gender,age,performance_rating,hiring_source,role
+EMP001,Aarav Sharma,Engineering,Mumbai,15-03-2022,,1800000,active,Male,28,4.2,LinkedIn,Engineer
+EMP002,Priya Patel,Sales,Bangalore,01-06-2021,30-11-2024,1200000,inactive,Female,32,3.1,Referral,Executive
+EMP003,Rohan Mehta,Marketing,Delhi,10-01-2023,,950000,active,Male,26,3.8,Job Portal,Analyst
+EMP004,Sneha Reddy,HR,Hyderabad,20-08-2020,,1100000,active,Female,35,4.5,Campus,Manager
+EMP005,Vikram Singh,Finance,Mumbai,05-11-2022,28-02-2025,1400000,inactive,Male,40,2.9,Agency,Lead
+EMP006,Ananya Gupta,Product,Remote,18-07-2023,,2200000,active,Female,29,4.7,LinkedIn,Lead
+EMP007,Karthik Nair,Operations,Bangalore,14-02-2021,,900000,active,Male,33,3.5,Referral,Associate
+EMP008,Divya Iyer,Engineering,Hyderabad,08-01-2024,,1600000,active,Female,25,4,Campus,Engineer
+EMP009,Amit Joshi,Sales,Delhi,22-04-2023,15-08-2024,1050000,inactive,Male,38,2.5,Job Portal,Executive
+EMP010,Meera Krishnan,Marketing,Remote,30-09-2022,,1300000,active,Female,31,3.9,LinkedIn,Manager
+EMP011,Rahul Verma,Engineering,Mumbai,12-11-2021,,2000000,active,Male,34,4.3,Referral,Lead
+EMP012,Kavitha Rajan,HR,Bangalore,05-08-2023,,850000,active,Female,27,3.6,Campus,Associate
+EMP013,Suresh Kumar,Finance,Delhi,18-05-2020,,1700000,active,Male,42,4.1,Agency,Director
+EMP014,Nisha Agarwal,Product,Mumbai,01-03-2024,,1900000,active,Female,30,4.4,LinkedIn,Engineer
+EMP015,Deepak Pandey,Operations,Hyderabad,20-06-2022,10-01-2025,800000,inactive,Male,36,2.8,Job Portal,Associate
+EMP016,Pooja Mishra,Sales,Remote,15-10-2023,,1150000,active,Female,24,3.7,Referral,Analyst
+EMP017,Arjun Das,Engineering,Bangalore,03-09-2021,,2100000,active,Male,37,4.6,LinkedIn,Manager
+EMP018,Lakshmi Menon,Marketing,Mumbai,12-06-2024,,1000000,active,Female,23,3.3,Campus,Associate
+EMP019,Rajesh Tiwari,HR,Delhi,25-01-2022,30-06-2024,1050000,inactive,Male,41,2.6,Agency,Executive
+EMP020,Simran Kaur,Finance,Hyderabad,08-05-2023,,1350000,active,Female,29,4,Referral,Analyst
+EMP021,Manish Saxena,Product,Remote,17-04-2021,,2400000,active,Male,39,4.8,LinkedIn,Director
+EMP022,Ritu Sharma,Operations,Mumbai,20-02-2024,,750000,active,Female,26,3.4,Job Portal,Associate
+EMP023,Aditya Bhat,Engineering,Bangalore,12-03-2023,,1750000,active,Male,28,4.1,Campus,Engineer
+EMP024,Swati Jain,Sales,Delhi,09-07-2022,20-12-2024,1100000,inactive,Female,33,2.7,Referral,Executive
+EMP025,Nikhil Rao,Marketing,Hyderabad,01-12-2021,,1200000,active,Male,35,3.9,LinkedIn,Lead
+EMP026,Anjali Dubey,HR,Remote,15-05-2024,,900000,active,Female,24,3.5,Campus,Analyst
+EMP027,Gaurav Chopra,Finance,Mumbai,22-09-2023,,1500000,active,Male,31,4.2,Agency,Manager
+EMP028,Tanvi Kulkarni,Product,Bangalore,03-04-2022,,2050000,active,Female,30,4.5,LinkedIn,Engineer
+EMP029,Sanjay Pillai,Operations,Delhi,28-07-2021,15-03-2025,850000,inactive,Male,44,2.4,Job Portal,Associate
+EMP030,Neha Bhatt,Engineering,Hyderabad,10-08-2024,,1650000,active,Female,27,3.8,Referral,Engineer
+EMP031,Tanvi Kulkarni,Product,Bangalore,03-04-2022,,1116666.667,active,Female,31,2.9,LinkedIn,Engineer
+EMP032,Sanjay Pillai,Operations,Delhi,28-07-2021,15-03-2025,916666.6667,inactive,Male,29,2.5,Job Portal,Associate
+EMP033,Tanvi Kulkarni,Product,Bangalore,21-11-2020,,716666.6667,active,Female,28,2.2,LinkedIn,Engineer
+EMP034,Sanjay Pillai,Operations,Delhi,17-03-2020,15-03-2025,516666.6667,inactive,Male,26,1.8,Job Portal,Associate
+EMP035,Tanvi Kulkarni,Product,Bangalore,12-07-2019,,316666.6667,active,Female,25,1.5,LinkedIn,Engineer
+EMP036,Sanjay Pillai,Operations,Delhi,05-11-2018,15-03-2025,116666.6667,inactive,Male,23,1.1,Job Portal,Associate
+EMP037,Tanvi Kulkarni,Product,Bangalore,01-03-2018,,-83333.33333,active,Female,22,0.8,LinkedIn,Engineer
+EMP038,Sanjay Pillai,Operations,Delhi,25-06-2017,15-03-2025,-283333.3333,inactive,Male,20,0.4,Job Portal,Associate
+EMP039,Tanvi Kulkarni,Product,Bangalore,19-10-2016,,-483333.3333,active,Female,19,0.1,LinkedIn,Engineer
+EMP040,Sanjay Pillai,Operations,Delhi,13-02-2016,15-03-2025,-683333.3333,inactive,Male,17,-0.3,Job Portal,Associate
+EMP041,Sanjay Pillai,Operations,Delhi,09-06-2015,15-03-2025,-883333.3333,inactive,Male,15.66666667,-0.633333333,Job Portal,Associate
+EMP042,Tanvi Kulkarni,Product,Bangalore,03-10-2014,,-1083333.333,active,Female,14.16666667,-0.983333333,LinkedIn,Engineer
+EMP043,Sanjay Pillai,Operations,Delhi,27-01-2014,15-03-2025,-1283333.333,inactive,Male,12.66666667,-1.333333333,Job Portal,Associate
+EMP044,Sanjay Pillai,Operations,Delhi,23-05-2013,15-03-2025,-1483333.333,inactive,Male,11.16666667,-1.683333333,Job Portal,Associate
