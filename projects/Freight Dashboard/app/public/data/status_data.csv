@@ -1,0 +1,6 @@
+status,value,percentage,color
+In Transit,112,44%,#3B82F6
+Cleared,53,21%,#10B981
+Delivered,75,28%,#F59E0B
+Delayed,14,5%,#EF4444
+Customs Hold,5,2%,#8B5CF6

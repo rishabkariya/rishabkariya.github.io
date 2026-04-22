@@ -1,0 +1,5 @@
+title,value,change,changeLabel,icon,color
+Shipments in Transit,112,+7,Last 7 Days,ship,blue
+Pending Documentation,28,6 Delayed,,document,orange
+Quote Conversion Rate,32.5%,+4.8%,vs Last Month,chart,green
+Gross Profit,$56,800,+8.5%,vs Last Month,dollar,green

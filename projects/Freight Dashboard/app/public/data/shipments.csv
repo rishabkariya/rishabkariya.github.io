@@ -1,0 +1,11 @@
+shipmentId,customer,route,mode,status,etd,eta
+FF-10895,Tech Co,Shanghai → Los Angeles,Sea,In Transit,20-May,$5,200
+FF-10872,Texil Industries,Dubai → Hamburg,Sea,In Transit,15-May,$30-May
+FF-10851,Fashion Inc.,Ho Chi Minh → Sydney,Air,Cleared,12-May,$6,700
+FF-10830,PharmaCo,Los Angeles → Tokyo,Sea,In Transit,05-May,$10,250
+FF-10819,Global Parts Ltd.,M. Aires → New York,Land,Delivered,02-May,$5,800
+FF-10888,Auto Parts Co,Shanghai → Rotterdam,Sea,In Transit,22-May,$8,400
+FF-10876,Electronics Inc,Hong Kong → Los Angeles,Air,Cleared,18-May,$12,300
+FF-10865,Textile Group,Mumbai → London,Sea,Delayed,10-May,$7,200
+FF-10854,Chemical Corp,Houston → Singapore,Sea,In Transit,25-May,$9,800
+FF-10843,Food Imports,Sydney → Tokyo,Air,Delivered,08-May,$4,500

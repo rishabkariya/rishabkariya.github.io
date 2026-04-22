@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs – Rishab Kariya</title>
+  <title>Blogs - Rishab Kariya</title>
+  <meta name="description" content="Notes from Rishab Kariya on AI experiments, practical workflows, business learning, and self-driven projects.">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
   <header class="header" id="header">
     <div class="header-inner">
       <nav class="nav">
@@ -45,19 +45,42 @@
   </header>
 
   <main class="container page-content">
-    <div class="projects-header section">
-      <h1 class="section-title" style="font-size:2.2rem;">Blogs</h1>
-      <p class="projects-subtitle">A collection of articles on development, finance, and ideas.</p>
+    <div class="filter-tabs" id="blogFilterTabs">
+      <button class="filter-tab active" data-category="all">All</button>
+      <button class="filter-tab" data-category="tech">Tech</button>
     </div>
-    <div class="section" style="padding-top: 0;">
-      <p style="color: var(--text-muted); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">No articles published yet. Check back soon!</p>
-    </div>
+
+    <section class="section blog-list-section" id="blogsGrid">
+      <div id="blogsEmptyState" style="display: none; text-align: center; padding: 4rem 1rem; color: var(--text-muted); opacity: 0; transform: translateY(20px);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width: 48px; height: 48px; margin-bottom: 1rem; opacity: 0.5;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <h3>Upcoming...</h3>
+        <p>More blog posts are on the way for this category.</p>
+      </div>
+
+      <a href="blogs/local-ai-experiments.html" class="blog-card featured-blog-card" data-categories="tech">
+        <div class="blog-card-topline">
+          <span class="tag">Tech</span>
+          <span class="blog-date">April 2026</span>
+        </div>
+        <h2 class="blog-card-title">Running AI Locally: Ollama, OpenClaw, Pi Agent and the real trade-off between saving cost and getting reliable output</h2>
+        <p class="blog-card-excerpt">A detailed note on why I tested local AI tools on my own system, what I managed to run, where the setup felt promising, and why current local AI still does not fully match the speed, polish, and dependability of cloud models for serious day-to-day use.</p>
+        <div class="blog-card-meta">
+          <span>Experiment log</span>
+          <span>Cost-focused</span>
+          <span>Read article</span>
+        </div>
+      </a>
+    </section>
   </main>
-  
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-text">
-        © 2026 Rishab Kariya
+        &copy; 2026 Rishab Kariya
       </div>
     </div>
   </footer>

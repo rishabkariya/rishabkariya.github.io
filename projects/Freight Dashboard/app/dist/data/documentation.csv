@@ -1,0 +1,9 @@
+customer,shipmentId,responsible,lastUpdate,docsPending,priority,mode
+PharmaCo,FF-10830,A. Patel,19-May,BL Invoice,High,Sea
+Fashion Inc.,FF-10895,R. Singh,17-May,Packing List,Medium,Air
+Texil Industries,FF-10871,P. Sharma,14-May,Completed,Low,Sea
+PharmaCo,FF-10830,Los Angeles → Tokyo,20-May,Delivered,High,Sea
+Global Parts Ltd.,FF-10819,M. Aires → New York,21-May,37% Sent,Medium,Land
+Tech Co,FF-10888,J. Chen,20-May,COO Certificate,High,Sea
+Auto Parts Co,FF-10876,M. Kumar,18-May,Insurance Docs,Low,Air
+Electronics Inc,FF-10865,S. Wong,16-May,Customs Form,Medium,Sea
