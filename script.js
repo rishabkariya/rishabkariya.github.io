@@ -214,50 +214,52 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   const projects = projectsGrid.querySelectorAll('.project-card');
   const emptyState = document.getElementById('projectsEmptyState');
   
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // Remove active class from all tabs
-      tabs.forEach(t => t.classList.remove('active'));
-      // Add active class to clicked tab
-      tab.classList.add('active');
+  function filterProjects(selectedCategory) {
+    let visibleCount = 0;
+    projects.forEach(project => {
+      const categoriesData = project.getAttribute('data-categories');
+      if (!categoriesData) return;
       
-      const selectedCategory = tab.getAttribute('data-category');
-      let visibleCount = 0;
+      const categories = categoriesData.split(',').map(c => c.trim());
+      const isAllTab = selectedCategory === 'all';
+      const isInProgress = categories.includes('in-progress');
       
-      // Filter projects
-      projects.forEach(project => {
-        const categoriesData = project.getAttribute('data-categories');
-        if (!categoriesData) return;
-        
-        const categories = categoriesData.split(',');
-        
-        const isAllTab = selectedCategory === 'all';
-        const isInProgress = categories.includes('in-progress');
-        
-        if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(selectedCategory))) {
-          project.style.display = 'block';
-          visibleCount++;
-          // Briefly reset animation on newly visible items
-          project.style.animation = 'none';
-          project.offsetHeight; // trigger reflow
-          project.style.animation = 'fadeInUp 0.5s ease forwards';
-          project.style.opacity = '1';
-          project.style.transform = 'translateY(0)';
-        } else {
-          project.style.display = 'none';
-        }
-      });
-
-      if (emptyState) {
-        if (visibleCount === 0) {
-          emptyState.style.display = 'block';
-          emptyState.style.animation = 'fadeInUp 0.5s ease forwards';
-        } else {
-          emptyState.style.display = 'none';
-        }
+      if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(selectedCategory))) {
+        project.style.display = 'block';
+        visibleCount++;
+        project.style.animation = 'none';
+        project.offsetHeight;
+        project.style.animation = 'fadeInUp 0.5s ease forwards';
+        project.style.opacity = '1';
+        project.style.transform = 'translateY(0)';
+      } else {
+        project.style.display = 'none';
       }
     });
+
+    if (emptyState) {
+      if (visibleCount === 0) {
+        emptyState.style.display = 'block';
+        emptyState.style.animation = 'fadeInUp 0.5s ease forwards';
+      } else {
+        emptyState.style.display = 'none';
+      }
+    }
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      filterProjects(tab.getAttribute('data-category'));
+    });
   });
+
+  // Initial filter on load
+  const activeTab = tabsContainer.querySelector('.filter-tab.active');
+  if (activeTab) {
+    filterProjects(activeTab.getAttribute('data-category'));
+  }
 })();
 
 // ===== BOOK FILTERING =====
