@@ -231,7 +231,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         
         const categories = categoriesData.split(',');
         
-        if (selectedCategory === 'all' || categories.includes(selectedCategory)) {
+        const isAllTab = selectedCategory === 'all';
+        const isInProgress = categories.includes('in-progress');
+        
+        if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(selectedCategory))) {
           project.style.display = 'block';
           visibleCount++;
           // Briefly reset animation on newly visible items
