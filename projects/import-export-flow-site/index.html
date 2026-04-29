@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import Export Flow Map</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Import / Export Journey</p>
+          <h1>Factory se buyer tak, pura shipment flow ek line par.</h1>
+          <p class="hero-copy">
+            Click any stage to see parties, documents, charges, risks, and what a forwarder or NVOCC should monitor.
+          </p>
+        </div>
+        <section class="route-controls" aria-label="Shipment settings">
+          <label>
+            Incoterm
+            <select id="incotermSelect"></select>
+          </label>
+          <label>
+            Shipment Type
+            <select id="shipmentSelect">
+              <option value="fcl">FCL Container</option>
+              <option value="lcl">LCL / Consolidation</option>
+              <option value="air">Air Freight</option>
+              <option value="project">Project Cargo</option>
+            </select>
+          </label>
+        </section>
+      </header>
+
+      <section class="map-panel">
+        <div class="legend">
+          <span><i class="seller"></i> Seller covers</span>
+          <span><i class="buyer"></i> Buyer covers</span>
+          <span><i class="risk"></i> Risk transfer</span>
+          <span><i class="active"></i> Selected stage</span>
+        </div>
+
+        <div class="journey-wrap" aria-label="Interactive import export route">
+          <svg class="journey-line" viewBox="0 0 1200 180" preserveAspectRatio="none" aria-hidden="true">
+            <path id="sellerPath" d="M80 92 C165 66 210 126 285 94 S415 64 500 92 S620 126 700 94 S835 60 925 90 S1050 120 1128 92" />
+            <path id="buyerPath" d="M80 92 C165 66 210 126 285 94 S415 64 500 92 S620 126 700 94 S835 60 925 90 S1050 120 1128 92" />
+          </svg>
+          <div id="journeyNodes" class="journey-nodes"></div>
+        </div>
+      </section>
+
+      <section class="detail-grid">
+        <article class="stage-card">
+          <div class="stage-card-head">
+            <div id="stageIcon" class="big-icon"></div>
+            <div>
+              <p class="eyebrow">Selected Stage</p>
+              <h2 id="stageTitle"></h2>
+              <p id="stageSubtitle"></p>
+            </div>
+          </div>
+          <div class="ownership-boxes">
+            <div>
+              <span>Cost owner</span>
+              <strong id="costOwner"></strong>
+            </div>
+            <div>
+              <span>Risk owner</span>
+              <strong id="riskOwner"></strong>
+            </div>
+          </div>
+          <p id="stageWatch" class="watch-text"></p>
+        </article>
+
+        <article class="info-card">
+          <p class="eyebrow">Operational Details</p>
+          <div class="info-stack">
+            <section>
+              <h3>Parties</h3>
+              <div id="parties" class="pill-list"></div>
+            </section>
+            <section>
+              <h3>Documents</h3>
+              <div id="documents" class="pill-list"></div>
+            </section>
+            <section>
+              <h3>Charges</h3>
+              <div id="charges" class="pill-list"></div>
+            </section>
+          </div>
+        </article>
+
+        <article class="incoterm-card">
+          <p class="eyebrow">Incoterm Lens</p>
+          <h2 id="incotermTitle"></h2>
+          <p id="incotermSummary"></p>
+          <div class="incoterm-metrics">
+            <div class="cost-metric"><span>Cost till</span><strong id="costTill"></strong></div>
+            <div class="risk-metric"><span>Risk at</span><strong id="riskAt"></strong></div>
+          </div>
+          <p id="incotermNote" class="note"></p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
