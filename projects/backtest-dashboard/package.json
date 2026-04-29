@@ -1,0 +1,20 @@
+{
+  "name": "backtest-dashboard",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "..\\..\\node_modules\\.bin\\vite.cmd --host 127.0.0.1 --port 4174 --strictPort",
+    "build": "..\\..\\node_modules\\.bin\\vite.cmd build"
+  },
+  "dependencies": {
+    "papaparse": "^5.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.2.6"
+  }
+}

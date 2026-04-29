@@ -1,0 +1,6 @@
+strategy_id,name,symbol,timeframe,strategy_type,total_return,cagr,sharpe,sortino,max_drawdown,win_rate,profit_factor,trades,avg_trade,volatility,exposure
+limit-reversion-nifty,Nifty Limit Reversion,NIFTY,5m,Mean Reversion,0.284,0.237,1.86,2.31,-0.071,0.584,1.72,214,1860,0.138,0.62
+breakout-banknifty,BankNifty Opening Breakout,BANKNIFTY,15m,Breakout,0.173,0.149,1.18,1.55,-0.124,0.471,1.29,148,2410,0.192,0.48
+vwap-reclaim-reliance,Reliance VWAP Reclaim,RELIANCE,10m,Trend Pullback,0.221,0.188,1.52,1.96,-0.086,0.542,1.51,176,920,0.151,0.55
+pair-spread-it,IT Pair Spread Mean Revert,INFY/TCS,30m,Stat Arb,0.119,0.102,1.34,1.71,-0.052,0.607,1.43,96,640,0.083,0.31
+crude-limit-scalper,Crude Limit Scalper,CRUDEOIL,3m,Scalping,-0.036,-0.031,-0.24,-0.18,-0.183,0.493,0.91,312,-140,0.245,0.73
