@@ -24,7 +24,7 @@ export function ShipmentsStatus() {
 
   const data = statusData.map(item => ({
     name: item.status,
-    value: item.value,
+    value: Number(item.value) || 0,
     color: item.color,
     percentage: item.percentage,
   }));
