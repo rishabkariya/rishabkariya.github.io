@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "..\\..\\node_modules\\.bin\\vite.cmd --host 127.0.0.1 --port 4174 --strictPort",
-    "build": "..\\..\\node_modules\\.bin\\vite.cmd build"
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
     "papaparse": "^5.5.3",
