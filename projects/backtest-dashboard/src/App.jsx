@@ -295,9 +295,9 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      loadCsv("/data/strategy_metrics.csv"),
-      loadCsv("/data/strategy_equity.csv"),
-      loadCsv("/data/strategy_trades.csv"),
+      loadCsv("./data/strategy_metrics.csv"),
+      loadCsv("./data/strategy_equity.csv"),
+      loadCsv("./data/strategy_trades.csv"),
     ]).then(([metrics, equity, tradeRows]) => {
       setStrategies(metrics);
       setCurves(equity);
