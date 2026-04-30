@@ -270,10 +270,7 @@ function Details({ combo, curve, trades }) {
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" tick={{ fontSize: 12 }} minTickGap={26} />
             <YAxis yAxisId="equity" tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
-            <YAxis yAxisId="pnl" orientation="right" tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(value, name) => [name === "equity" ? fmtMoney(value) : fmtMoney(value), name]} />
-            <Legend />
-            <Bar yAxisId="pnl" dataKey="pnl" name="Bar PnL" fill="#94a3b8" barSize={6} />
+            <Tooltip formatter={(value, name) => [fmtMoney(value), name]} />
             <Line yAxisId="equity" type="monotone" dataKey="equity" name="Equity" stroke="#0f766e" strokeWidth={2.4} dot={false} />
           </ComposedChart>
         </ResponsiveContainer>
