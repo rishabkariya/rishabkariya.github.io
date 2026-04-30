@@ -326,7 +326,7 @@ function Details({ combo, curve, trades }) {
           <BarChart data={trades}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="exit_date" hide />
-            <YAxis tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
+            <YAxis tickFormatter={(value) => `$${(value / SCALE).toFixed(2)}`} tick={{ fontSize: 12 }} />
             <Tooltip formatter={(value) => [fmtMoney(value), "Trade PnL"]} />
             <Bar dataKey="net_pnl" radius={[4, 4, 0, 0]}>
               {trades.map((trade) => (
