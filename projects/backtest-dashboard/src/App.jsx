@@ -389,10 +389,10 @@ export default function App() {
 
   useEffect(() => {
     Promise.all([
-      loadCsv("/data/strategy_metrics.csv"),
-      loadCsv("/data/parameter_sweep.csv"),
-      loadCsv("/data/strategy_equity.csv"),
-      loadCsv("/data/strategy_trades.csv"),
+      loadCsv("./data/strategy_metrics.csv"),
+      loadCsv("./data/parameter_sweep.csv"),
+      loadCsv("./data/strategy_equity.csv"),
+      loadCsv("./data/strategy_trades.csv"),
     ]).then(([metrics, sweepRows, equityRows, tradeRows]) => {
       setStrategies(metrics);
       setSweep(sweepRows);
