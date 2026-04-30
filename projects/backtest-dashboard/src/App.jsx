@@ -71,7 +71,7 @@ async function loadCsv(path) {
   }).data;
 }
 
-const SCALE = 100; // 1,000,000 raw → 10,000 displayed
+const SCALE = 20000; // 1,000,000 raw → $50 displayed
 
 function fmtPct(value, digits = 2) {
   return `${(Number(value) * 100).toFixed(digits)}%`;
