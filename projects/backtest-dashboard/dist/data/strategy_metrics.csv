@@ -1,6 +1,5 @@
-strategy_id,name,symbol,timeframe,strategy_type,total_return,cagr,sharpe,sortino,max_drawdown,win_rate,profit_factor,trades,avg_trade,volatility,exposure
-limit-reversion-nifty,BTCUSDT Mean Revert,BTCUSDT,5m,Mean Reversion,0.284,0.237,1.86,2.31,-0.071,0.584,1.72,214,1860,0.138,0.62
-breakout-banknifty,ETHUSDT Momentum,ETHUSDT,15m,Breakout,0.173,0.149,1.18,1.55,-0.124,0.471,1.29,148,2410,0.192,0.48
-vwap-reclaim-reliance,BTCUSDT VWAP,BTCUSDT,10m,Trend Pullback,0.221,0.188,1.52,1.96,-0.086,0.542,1.51,176,920,0.151,0.55
-pair-spread-it,SOL/ETH Stat Arb,SOL/ETH,30m,Stat Arb,0.119,0.102,1.34,1.71,-0.052,0.607,1.43,96,640,0.083,0.31
-crude-limit-scalper,XRPUSDT High-Frequency,XRPUSDT,3m,Scalping,-0.036,-0.031,-0.24,-0.18,-0.183,0.493,0.91,312,-140,0.245,0.73
+strategy_id,selected_combo_id,name,symbol,timeframe,strategy_type,param1_name,param1_value,param2_name,param2_value,total_return,cagr,sharpe,sortino,max_drawdown,win_rate,profit_factor,trades,avg_trade,volatility,exposure
+bollinger_mean_reversion,bollinger_mean_reversion__40__3p5,Bollinger Bands Mean Reversion,BTCUSDT,1m,Mean Reversion,bb_length,40.0,std_dev,3.5,0.00311486544906292,2.1116678596610647,15.1933123774796,4.835368224062626,-0.0017609610303658263,1.0,999999.0,2,507.4938157571596,0.0748989935906915,0.029861111111111113
+ema_crossover_trend,ema_crossover_trend__25__125,EMA Crossover Trend Following,BTCUSDT,1m,Trend Following,fast_ema,25.0,slow_ema,125.0,-0.012059741141861369,-0.9880683790328089,-15.346400790822662,-21.756669086087122,-0.014426038928764262,0.15,0.5539272816503144,20,-570.6459867090277,0.2859087062773819,0.9993055555555556
+rsi_mean_reversion,rsi_mean_reversion__20__25,RSI Mean Reversion,BTCUSDT,1m,Mean Reversion,rsi_length,20.0,oversold_threshold,25.0,0.0037845573692207868,2.9699602876632722,16.403792385397388,7.685168331181761,-0.003549880844984088,0.6666666666666666,14.372071213873364,3,843.1658617718689,0.08426750528199319,0.05486111111111111
+vwap_mean_reversion,vwap_mean_reversion__1__0,VWAP Mean Reversion,BTCUSDT,1m,Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.0,0.007796138119115836,16.022830641330625,18.650237697949027,16.17576663598377,-0.0030280309526216076,1.0,999999.0,1,8353.437844266882,0.15260969779060246,0.26666666666666666
