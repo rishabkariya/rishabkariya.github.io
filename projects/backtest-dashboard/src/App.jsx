@@ -71,15 +71,17 @@ async function loadCsv(path) {
   }).data;
 }
 
+const SCALE = 100; // 1,000,000 raw → 10,000 displayed
+
 function fmtPct(value, digits = 2) {
   return `${(Number(value) * 100).toFixed(digits)}%`;
 }
 
 function fmtMoney(value) {
-  return Number(value).toLocaleString("en-IN", {
+  return (Number(value) / SCALE).toLocaleString("en-US", {
     maximumFractionDigits: 0,
     style: "currency",
-    currency: "INR",
+    currency: "USD",
   });
 }
 
@@ -269,7 +271,7 @@ function Details({ combo, curve, trades }) {
           <ComposedChart data={curve}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" tick={{ fontSize: 12 }} minTickGap={26} />
-            <YAxis yAxisId="equity" tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
+            <YAxis yAxisId="equity" tickFormatter={(value) => `$${Math.round(value / SCALE / 1000)}k`} tick={{ fontSize: 12 }} />
             <Tooltip formatter={(value, name) => [fmtMoney(value), name]} />
             <Line yAxisId="equity" type="monotone" dataKey="equity" name="Equity" stroke="#0f766e" strokeWidth={2.4} dot={false} />
           </ComposedChart>
