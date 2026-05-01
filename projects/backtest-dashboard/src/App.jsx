@@ -243,7 +243,7 @@ function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo }) {
                     style={cell?.combo_id === selectedComboId ? {} : getCellStyles(value)}
                     onClick={() => cell && onSelectCombo(cell.combo_id)}
                   >
-                    {metric.includes("sharpe") ? (value / 10).toFixed(2) : value.toFixed(2)}
+                    {value.toFixed(2)}
                   </button>
                 );
               })}
@@ -285,7 +285,7 @@ function Details({ combo, curve, trades }) {
       <aside className="side-stack">
         <MetricCard label="Equity" value={fmtMoney(latest?.equity || 0)} sub="latest mark" />
         <MetricCard label="Total Return" value={fmtPct(combo.total_return)} tone={combo.total_return >= 0 ? "good" : "bad"} />
-        <MetricCard label="Sharpe" value={fmtNum(combo.sharpe_ratio / 10)} sub={`Sortino ${fmtNum(combo.sortino_ratio / 10)}`} />
+        <MetricCard label="Sharpe" value={fmtNum(combo.sharpe_ratio)} sub={`Sortino ${fmtNum(combo.sortino_ratio)}`} />
         <MetricCard label="Max Drawdown" value={fmtPct(combo.max_drawdown)} tone="bad" />
       </aside>
 
@@ -308,14 +308,14 @@ function Details({ combo, curve, trades }) {
       <article className="chart-panel">
         <div className="panel-head compact">
           <h3>Rolling Sharpe</h3>
-          <span>{fmtNum((latest?.rolling_sharpe || 0) / 10)}</span>
+          <span>{fmtNum(latest?.rolling_sharpe || 0)}</span>
         </div>
         <ResponsiveContainer width="100%" height={240}>
           <LineChart data={curve}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" hide />
-            <YAxis tickFormatter={(value) => (value / 10).toFixed(1)} tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(value) => [fmtNum(value / 10), "Rolling Sharpe"]} />
+            <YAxis tickFormatter={(value) => value.toFixed(1)} tick={{ fontSize: 12 }} />
+            <Tooltip formatter={(value) => [fmtNum(value), "Rolling Sharpe"]} />
             <Line type="monotone" dataKey="rolling_sharpe" stroke="#1d4ed8" strokeWidth={2.2} dot={false} isAnimationActive={false} />
           </LineChart>
         </ResponsiveContainer>
@@ -435,7 +435,7 @@ export default function App() {
             return {
               ...s,
               total_return: combo.total_return_pct / 100, 
-              sharpe: combo.sharpe_ratio / 10,
+              sharpe: combo.sharpe_ratio,
               max_drawdown: combo.max_drawdown_pct / 100,
               win_rate: combo.win_rate_pct / 100,
               profit_factor: combo.profit_factor,
@@ -445,8 +445,7 @@ export default function App() {
             };
           }
         }
-        // Also scale the base strategies sharpe
-        return { ...s, sharpe: s.sharpe / 10 };
+        return s;
       })
       .filter((strategy) => !q || `${strategy.name} ${strategy.symbol} ${strategy.strategy_type}`.toLowerCase().includes(q))
       .filter((strategy) => strategy.sharpe >= minSharpe)
@@ -487,7 +486,7 @@ export default function App() {
         <MetricCard label="Strategies" value={strategies.length} sub="stat-arb skipped" />
         <MetricCard label="Parameter Combos" value={portfolioStats.combos} sub="25 per strategy" />
         <MetricCard label="Best Return" value={fmtPct(portfolioStats.best.total_return)} sub={portfolioStats.best.name} tone="good" />
-        <MetricCard label="Avg Sharpe" value={fmtNum(portfolioStats.avgSharpe / 10)} sub="best combo per strategy" />
+        <MetricCard label="Avg Sharpe" value={fmtNum(portfolioStats.avgSharpe)} sub="best combo per strategy" />
       </section>
 
       <section className="workspace-grid">
