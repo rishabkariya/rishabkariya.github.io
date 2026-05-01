@@ -220,11 +220,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       const categoriesData = project.getAttribute('data-categories');
       if (!categoriesData) return;
       
-      const categories = categoriesData.split(',').map(c => c.trim());
+      const categories = categoriesData.split(',').map(c => c.trim().toLowerCase());
       const isAllTab = selectedCategory === 'all';
       const isInProgress = categories.includes('in-progress');
+      const lowerSelected = selectedCategory.toLowerCase();
       
-      if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(selectedCategory))) {
+      if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(lowerSelected))) {
         project.style.display = 'block';
         visibleCount++;
         project.style.animation = 'none';
