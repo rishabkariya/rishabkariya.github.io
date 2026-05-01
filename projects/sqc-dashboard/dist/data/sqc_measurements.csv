@@ -1,0 +1,41 @@
+date,line,shift,product,operator,batch,sample,measurement,target,lsl,usl,defect_type,defects,inspected,downtime_minutes
+2026-04-01,Line A,Day,Valve Body,A. Mehta,VB-2401,1,50.18,50,49.5,50.5,Burr,3,220,8
+2026-04-01,Line A,Night,Valve Body,R. Singh,VB-2402,2,50.24,50,49.5,50.5,Scratch,2,210,11
+2026-04-01,Line B,Day,Pump Shaft,N. Rao,PS-3101,1,24.83,25,24.6,25.4,Diameter undersize,5,180,18
+2026-04-01,Line B,Night,Pump Shaft,K. Das,PS-3102,2,25.12,25,24.6,25.4,None,0,190,9
+2026-04-02,Line A,Day,Valve Body,A. Mehta,VB-2403,3,49.94,50,49.5,50.5,None,0,230,6
+2026-04-02,Line A,Night,Valve Body,R. Singh,VB-2404,4,50.42,50,49.5,50.5,Porosity,4,205,15
+2026-04-02,Line B,Day,Pump Shaft,N. Rao,PS-3103,3,24.72,25,24.6,25.4,Diameter undersize,6,175,22
+2026-04-02,Line B,Night,Pump Shaft,K. Das,PS-3104,4,25.04,25,24.6,25.4,Scratch,1,195,7
+2026-04-03,Line A,Day,Valve Body,A. Mehta,VB-2405,5,50.05,50,49.5,50.5,None,0,240,5
+2026-04-03,Line A,Night,Valve Body,R. Singh,VB-2406,6,50.56,50,49.5,50.5,Dimension high,8,200,28
+2026-04-03,Line B,Day,Pump Shaft,N. Rao,PS-3105,5,24.68,25,24.6,25.4,Diameter undersize,7,170,25
+2026-04-03,Line B,Night,Pump Shaft,K. Das,PS-3106,6,25.15,25,24.6,25.4,None,0,205,8
+2026-04-04,Line A,Day,Valve Body,A. Mehta,VB-2407,7,49.88,50,49.5,50.5,Burr,2,235,6
+2026-04-04,Line A,Night,Valve Body,R. Singh,VB-2408,8,50.37,50,49.5,50.5,Scratch,3,210,13
+2026-04-04,Line B,Day,Pump Shaft,N. Rao,PS-3107,7,24.58,25,24.6,25.4,Diameter undersize,10,165,32
+2026-04-04,Line B,Night,Pump Shaft,K. Das,PS-3108,8,25.21,25,24.6,25.4,None,0,200,7
+2026-04-05,Line A,Day,Valve Body,A. Mehta,VB-2409,9,50.11,50,49.5,50.5,None,0,245,4
+2026-04-05,Line A,Night,Valve Body,R. Singh,VB-2410,10,50.29,50,49.5,50.5,Porosity,2,215,10
+2026-04-05,Line B,Day,Pump Shaft,N. Rao,PS-3109,9,24.77,25,24.6,25.4,Burr,3,180,16
+2026-04-05,Line B,Night,Pump Shaft,K. Das,PS-3110,10,25.31,25,24.6,25.4,Scratch,2,205,9
+2026-04-06,Line A,Day,Valve Body,A. Mehta,VB-2411,11,49.71,50,49.5,50.5,Dimension low,5,225,17
+2026-04-06,Line A,Night,Valve Body,R. Singh,VB-2412,12,50.48,50,49.5,50.5,Scratch,4,205,16
+2026-04-06,Line B,Day,Pump Shaft,N. Rao,PS-3111,11,24.91,25,24.6,25.4,None,0,185,10
+2026-04-06,Line B,Night,Pump Shaft,K. Das,PS-3112,12,25.38,25,24.6,25.4,Dimension high,4,195,14
+2026-04-07,Line A,Day,Valve Body,A. Mehta,VB-2413,13,49.96,50,49.5,50.5,None,0,250,4
+2026-04-07,Line A,Night,Valve Body,R. Singh,VB-2414,14,50.22,50,49.5,50.5,Burr,1,220,7
+2026-04-07,Line B,Day,Pump Shaft,N. Rao,PS-3113,13,24.62,25,24.6,25.4,Diameter undersize,6,175,20
+2026-04-07,Line B,Night,Pump Shaft,K. Das,PS-3114,14,25.16,25,24.6,25.4,None,0,210,8
+2026-04-08,Line A,Day,Valve Body,A. Mehta,VB-2415,15,50.08,50,49.5,50.5,None,0,245,5
+2026-04-08,Line A,Night,Valve Body,R. Singh,VB-2416,16,50.51,50,49.5,50.5,Dimension high,6,205,24
+2026-04-08,Line B,Day,Pump Shaft,N. Rao,PS-3115,15,24.69,25,24.6,25.4,Diameter undersize,7,170,23
+2026-04-08,Line B,Night,Pump Shaft,K. Das,PS-3116,16,25.02,25,24.6,25.4,Scratch,1,215,7
+2026-04-09,Line A,Day,Valve Body,A. Mehta,VB-2417,17,49.82,50,49.5,50.5,Burr,2,240,6
+2026-04-09,Line A,Night,Valve Body,R. Singh,VB-2418,18,50.39,50,49.5,50.5,Porosity,3,210,12
+2026-04-09,Line B,Day,Pump Shaft,N. Rao,PS-3117,17,24.55,25,24.6,25.4,Diameter undersize,9,168,30
+2026-04-09,Line B,Night,Pump Shaft,K. Das,PS-3118,18,25.24,25,24.6,25.4,None,0,205,9
+2026-04-10,Line A,Day,Valve Body,A. Mehta,VB-2419,19,50.02,50,49.5,50.5,None,0,255,3
+2026-04-10,Line A,Night,Valve Body,R. Singh,VB-2420,20,50.44,50,49.5,50.5,Scratch,5,205,18
+2026-04-10,Line B,Day,Pump Shaft,N. Rao,PS-3119,19,24.73,25,24.6,25.4,Burr,3,180,15
+2026-04-10,Line B,Night,Pump Shaft,K. Das,PS-3120,20,25.11,25,24.6,25.4,None,0,215,7
