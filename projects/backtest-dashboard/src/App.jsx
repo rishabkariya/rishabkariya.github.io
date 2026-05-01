@@ -178,7 +178,7 @@ function StrategyTable({ strategies, selectedId, onSelect, sortKey, sortDirectio
 }
 
 function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo }) {
-  const [metric, setMetric] = useState("sharpe_ratio");
+  const [metric, setMetric] = useState("total_return_pct");
   const rows = useMemo(() => sweep.filter((item) => item.strategy_id === strategy?.strategy_id), [sweep, strategy]);
   const xValues = [...new Set(rows.map((item) => item.param2_value))].sort((a, b) => Number(a) - Number(b));
   const yValues = [...new Set(rows.map((item) => item.param1_value))].sort((a, b) => Number(a) - Number(b));
