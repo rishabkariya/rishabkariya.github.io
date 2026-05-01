@@ -1,0 +1,401 @@
+combo_id,strategy_id,strategy_name,param1_name,param1_value,param2_name,param2_value,metric_name,metric_value
+bollinger_mean_reversion__10__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,1.5,sharpe_ratio,-98.0713089151961
+bollinger_mean_reversion__10__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,1.5,total_return_pct,-6.387952676527786
+bollinger_mean_reversion__10__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,1.5,max_drawdown_pct,-6.451187110992606
+bollinger_mean_reversion__10__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,1.5,profit_factor,0.3193629342555834
+bollinger_mean_reversion__10__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.0,sharpe_ratio,-63.95474589166625
+bollinger_mean_reversion__10__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.0,total_return_pct,-3.4544580062924712
+bollinger_mean_reversion__10__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.0,max_drawdown_pct,-3.495226702001375
+bollinger_mean_reversion__10__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.0,profit_factor,0.36291134988760865
+bollinger_mean_reversion__10__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.5,sharpe_ratio,-20.014885990120273
+bollinger_mean_reversion__10__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.5,total_return_pct,-0.4053140639339925
+bollinger_mean_reversion__10__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.5,max_drawdown_pct,-0.5960943958953968
+bollinger_mean_reversion__10__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,2.5,profit_factor,0.393780124006493
+bollinger_mean_reversion__10__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.0,sharpe_ratio,0.0
+bollinger_mean_reversion__10__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.0,total_return_pct,0.0
+bollinger_mean_reversion__10__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.0,max_drawdown_pct,0.0
+bollinger_mean_reversion__10__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.0,profit_factor,0.0
+bollinger_mean_reversion__10__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.5,sharpe_ratio,0.0
+bollinger_mean_reversion__10__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.5,total_return_pct,0.0
+bollinger_mean_reversion__10__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.5,max_drawdown_pct,0.0
+bollinger_mean_reversion__10__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,10.0,std_dev,3.5,profit_factor,0.0
+bollinger_mean_reversion__20__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,1.5,sharpe_ratio,-58.896149238754525
+bollinger_mean_reversion__20__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,1.5,total_return_pct,-3.878643331418341
+bollinger_mean_reversion__20__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,1.5,max_drawdown_pct,-3.9258678698025684
+bollinger_mean_reversion__20__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,1.5,profit_factor,0.3816489999949454
+bollinger_mean_reversion__20__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.0,sharpe_ratio,-48.89841561749236
+bollinger_mean_reversion__20__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.0,total_return_pct,-2.8964215606455013
+bollinger_mean_reversion__20__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.0,max_drawdown_pct,-2.9564827640181313
+bollinger_mean_reversion__20__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.0,profit_factor,0.35725362412722106
+bollinger_mean_reversion__20__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.5,sharpe_ratio,-26.595203636052318
+bollinger_mean_reversion__20__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.5,total_return_pct,-1.223760397007212
+bollinger_mean_reversion__20__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.5,max_drawdown_pct,-1.2852750003987223
+bollinger_mean_reversion__20__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,2.5,profit_factor,0.8054266276074658
+bollinger_mean_reversion__20__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.0,sharpe_ratio,-13.102586762494921
+bollinger_mean_reversion__20__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.0,total_return_pct,-0.24606817951567939
+bollinger_mean_reversion__20__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.0,max_drawdown_pct,-0.3317120721548994
+bollinger_mean_reversion__20__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.0,profit_factor,0.782797077034406
+bollinger_mean_reversion__20__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.5,sharpe_ratio,0.0
+bollinger_mean_reversion__20__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.5,total_return_pct,0.0
+bollinger_mean_reversion__20__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.5,max_drawdown_pct,0.0
+bollinger_mean_reversion__20__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,20.0,std_dev,3.5,profit_factor,0.0
+bollinger_mean_reversion__30__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,1.5,sharpe_ratio,-39.64990930955446
+bollinger_mean_reversion__30__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,1.5,total_return_pct,-2.7016338391219863
+bollinger_mean_reversion__30__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,1.5,max_drawdown_pct,-2.971559150997083
+bollinger_mean_reversion__30__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,1.5,profit_factor,0.7229312884745316
+bollinger_mean_reversion__30__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.0,sharpe_ratio,-27.403839176716755
+bollinger_mean_reversion__30__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.0,total_return_pct,-1.7189991433330443
+bollinger_mean_reversion__30__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.0,max_drawdown_pct,-1.9603445111472384
+bollinger_mean_reversion__30__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.0,profit_factor,0.7948497210901271
+bollinger_mean_reversion__30__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.5,sharpe_ratio,-15.673274883274638
+bollinger_mean_reversion__30__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.5,total_return_pct,-0.818055191307776
+bollinger_mean_reversion__30__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.5,max_drawdown_pct,-1.210923681176057
+bollinger_mean_reversion__30__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,2.5,profit_factor,0.8475336295580992
+bollinger_mean_reversion__30__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.0,sharpe_ratio,7.393047780504836
+bollinger_mean_reversion__30__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.0,total_return_pct,0.23832728613428777
+bollinger_mean_reversion__30__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.0,max_drawdown_pct,-0.3549880844983977
+bollinger_mean_reversion__30__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.0,profit_factor,5.292251470541762
+bollinger_mean_reversion__30__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.5,sharpe_ratio,4.7164435001405645
+bollinger_mean_reversion__30__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.5,total_return_pct,0.05193395991349714
+bollinger_mean_reversion__30__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.5,max_drawdown_pct,-0.14876820226982224
+bollinger_mean_reversion__30__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,30.0,std_dev,3.5,profit_factor,999999.0
+bollinger_mean_reversion__40__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,1.5,sharpe_ratio,-23.340488798097937
+bollinger_mean_reversion__40__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,1.5,total_return_pct,-1.5811853914965424
+bollinger_mean_reversion__40__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,1.5,max_drawdown_pct,-1.8843076278334259
+bollinger_mean_reversion__40__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,1.5,profit_factor,0.9111245088014144
+bollinger_mean_reversion__40__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.0,sharpe_ratio,-9.984805368675778
+bollinger_mean_reversion__40__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.0,total_return_pct,-0.6363508360098358
+bollinger_mean_reversion__40__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.0,max_drawdown_pct,-1.22999146997117
+bollinger_mean_reversion__40__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.0,profit_factor,1.4104554824411506
+bollinger_mean_reversion__40__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.5,sharpe_ratio,-10.416962411195794
+bollinger_mean_reversion__40__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.5,total_return_pct,-0.5260083742371524
+bollinger_mean_reversion__40__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.5,max_drawdown_pct,-1.0326191005867624
+bollinger_mean_reversion__40__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,2.5,profit_factor,0.9893947654233185
+bollinger_mean_reversion__40__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.0,sharpe_ratio,3.3441598490949183
+bollinger_mean_reversion__40__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.0,total_return_pct,0.10915230351395966
+bollinger_mean_reversion__40__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.0,max_drawdown_pct,-0.3549880844984088
+bollinger_mean_reversion__40__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.0,profit_factor,11.147670523121572
+bollinger_mean_reversion__40__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.5,sharpe_ratio,15.1933123774796
+bollinger_mean_reversion__40__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.5,total_return_pct,0.311486544906292
+bollinger_mean_reversion__40__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.5,max_drawdown_pct,-0.17609610303658263
+bollinger_mean_reversion__40__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,40.0,std_dev,3.5,profit_factor,999999.0
+bollinger_mean_reversion__50__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,1.5,sharpe_ratio,-18.596946454205213
+bollinger_mean_reversion__50__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,1.5,total_return_pct,-1.2282856737921732
+bollinger_mean_reversion__50__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,1.5,max_drawdown_pct,-1.6621265776746053
+bollinger_mean_reversion__50__1p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,1.5,profit_factor,0.8567291899067312
+bollinger_mean_reversion__50__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.0,sharpe_ratio,-18.075700207149882
+bollinger_mean_reversion__50__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.0,total_return_pct,-1.0951865887113166
+bollinger_mean_reversion__50__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.0,max_drawdown_pct,-1.5365880201665072
+bollinger_mean_reversion__50__2,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.0,profit_factor,0.7210024512936197
+bollinger_mean_reversion__50__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.5,sharpe_ratio,-12.250488331965803
+bollinger_mean_reversion__50__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.5,total_return_pct,-0.5847419266958864
+bollinger_mean_reversion__50__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.5,max_drawdown_pct,-0.8811650752879263
+bollinger_mean_reversion__50__2p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,2.5,profit_factor,0.9334967426147178
+bollinger_mean_reversion__50__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.0,sharpe_ratio,-2.0160240451851
+bollinger_mean_reversion__50__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.0,total_return_pct,-0.080200585223833
+bollinger_mean_reversion__50__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.0,max_drawdown_pct,-0.5126958881140675
+bollinger_mean_reversion__50__3,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.0,profit_factor,1.0433426252369462
+bollinger_mean_reversion__50__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.5,sharpe_ratio,6.908475989934768
+bollinger_mean_reversion__50__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.5,total_return_pct,0.16847491547304916
+bollinger_mean_reversion__50__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.5,max_drawdown_pct,-0.42598798521364944
+bollinger_mean_reversion__50__3p5,bollinger_mean_reversion,Bollinger Bands Mean Reversion,bb_length,50.0,std_dev,3.5,profit_factor,999999.0
+rsi_mean_reversion__7__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,20.0,sharpe_ratio,-18.2534093226165
+rsi_mean_reversion__7__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,20.0,total_return_pct,-0.7386859783138688
+rsi_mean_reversion__7__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,20.0,max_drawdown_pct,-0.8385385092362418
+rsi_mean_reversion__7__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,20.0,profit_factor,0.9525484780802015
+rsi_mean_reversion__7__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,25.0,sharpe_ratio,-25.75921978559393
+rsi_mean_reversion__7__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,25.0,total_return_pct,-1.2724843187596813
+rsi_mean_reversion__7__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,25.0,max_drawdown_pct,-1.3753054335847836
+rsi_mean_reversion__7__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,25.0,profit_factor,1.0744432370330435
+rsi_mean_reversion__7__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,30.0,sharpe_ratio,-43.941199896234046
+rsi_mean_reversion__7__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,30.0,total_return_pct,-2.4705497850476155
+rsi_mean_reversion__7__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,30.0,max_drawdown_pct,-2.528953021433211
+rsi_mean_reversion__7__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,30.0,profit_factor,0.6373557147928635
+rsi_mean_reversion__7__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,35.0,sharpe_ratio,-67.51091526376692
+rsi_mean_reversion__7__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,35.0,total_return_pct,-4.266420056448695
+rsi_mean_reversion__7__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,35.0,max_drawdown_pct,-4.302891514636609
+rsi_mean_reversion__7__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,35.0,profit_factor,0.4981589414397081
+rsi_mean_reversion__7__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,40.0,sharpe_ratio,-89.89278948427479
+rsi_mean_reversion__7__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,40.0,total_return_pct,-6.116645527443188
+rsi_mean_reversion__7__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,40.0,max_drawdown_pct,-6.152412108398442
+rsi_mean_reversion__7__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,7.0,oversold_threshold,40.0,profit_factor,0.3558902550230301
+rsi_mean_reversion__10__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,20.0,sharpe_ratio,-2.657253930731568
+rsi_mean_reversion__10__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,20.0,total_return_pct,-0.09602337280503193
+rsi_mean_reversion__10__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,20.0,max_drawdown_pct,-0.4843394666199652
+rsi_mean_reversion__10__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,20.0,profit_factor,2.8125896898268596
+rsi_mean_reversion__10__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,25.0,sharpe_ratio,-9.983705681656021
+rsi_mean_reversion__10__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,25.0,total_return_pct,-0.42138555055406535
+rsi_mean_reversion__10__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,25.0,max_drawdown_pct,-0.6751287331166367
+rsi_mean_reversion__10__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,25.0,profit_factor,1.529875434502442
+rsi_mean_reversion__10__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,30.0,sharpe_ratio,-19.76355994246031
+rsi_mean_reversion__10__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,30.0,total_return_pct,-1.0206649561649517
+rsi_mean_reversion__10__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,30.0,max_drawdown_pct,-1.2642737235513346
+rsi_mean_reversion__10__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,30.0,profit_factor,1.1609050723620535
+rsi_mean_reversion__10__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,35.0,sharpe_ratio,-34.38999796987737
+rsi_mean_reversion__10__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,35.0,total_return_pct,-2.031805524489494
+rsi_mean_reversion__10__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,35.0,max_drawdown_pct,-2.1816441370832163
+rsi_mean_reversion__10__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,35.0,profit_factor,0.7973175042819322
+rsi_mean_reversion__10__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,40.0,sharpe_ratio,-54.46541523991353
+rsi_mean_reversion__10__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,40.0,total_return_pct,-3.6313522818807953
+rsi_mean_reversion__10__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,40.0,max_drawdown_pct,-3.7893974032674915
+rsi_mean_reversion__10__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,10.0,oversold_threshold,40.0,profit_factor,0.659014997341499
+rsi_mean_reversion__14__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,20.0,sharpe_ratio,13.91929294528658
+rsi_mean_reversion__14__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,20.0,total_return_pct,0.3190217472295531
+rsi_mean_reversion__14__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,20.0,max_drawdown_pct,-0.3549880844983422
+rsi_mean_reversion__14__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,20.0,profit_factor,11.241770195593206
+rsi_mean_reversion__14__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,25.0,sharpe_ratio,-5.310157231423504
+rsi_mean_reversion__14__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,25.0,total_return_pct,-0.19535752150292574
+rsi_mean_reversion__14__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,25.0,max_drawdown_pct,-0.473912567742385
+rsi_mean_reversion__14__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,25.0,profit_factor,2.251484063626729
+rsi_mean_reversion__14__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,30.0,sharpe_ratio,-9.439854168215595
+rsi_mean_reversion__14__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,30.0,total_return_pct,-0.4670048476392852
+rsi_mean_reversion__14__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,30.0,max_drawdown_pct,-0.8897702828808418
+rsi_mean_reversion__14__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,30.0,profit_factor,1.1580966423632726
+rsi_mean_reversion__14__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,35.0,sharpe_ratio,-24.070233365458407
+rsi_mean_reversion__14__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,35.0,total_return_pct,-1.3616620301368454
+rsi_mean_reversion__14__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,35.0,max_drawdown_pct,-1.5830830449690914
+rsi_mean_reversion__14__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,35.0,profit_factor,1.054019172479741
+rsi_mean_reversion__14__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,40.0,sharpe_ratio,-37.072768227075
+rsi_mean_reversion__14__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,40.0,total_return_pct,-2.383164220875511
+rsi_mean_reversion__14__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,40.0,max_drawdown_pct,-2.535000833108092
+rsi_mean_reversion__14__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,14.0,oversold_threshold,40.0,profit_factor,0.6518194381925108
+rsi_mean_reversion__20__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,20.0,sharpe_ratio,13.994084426776148
+rsi_mean_reversion__20__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,20.0,total_return_pct,0.18154790259192755
+rsi_mean_reversion__20__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,20.0,max_drawdown_pct,-0.09032564153363953
+rsi_mean_reversion__20__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,20.0,profit_factor,999999.0
+rsi_mean_reversion__20__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,25.0,sharpe_ratio,16.403792385397388
+rsi_mean_reversion__20__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,25.0,total_return_pct,0.3784557369220787
+rsi_mean_reversion__20__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,25.0,max_drawdown_pct,-0.3549880844984088
+rsi_mean_reversion__20__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,25.0,profit_factor,14.372071213873364
+rsi_mean_reversion__20__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,30.0,sharpe_ratio,-1.9909973947334871
+rsi_mean_reversion__20__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,30.0,total_return_pct,-0.06910730807857535
+rsi_mean_reversion__20__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,30.0,max_drawdown_pct,-0.4558819383096435
+rsi_mean_reversion__20__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,30.0,profit_factor,2.787499604440502
+rsi_mean_reversion__20__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,35.0,sharpe_ratio,-2.693784392273402
+rsi_mean_reversion__20__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,35.0,total_return_pct,-0.13711280681243387
+rsi_mean_reversion__20__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,35.0,max_drawdown_pct,-0.6356656152839313
+rsi_mean_reversion__20__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,35.0,profit_factor,1.7163127527027868
+rsi_mean_reversion__20__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,40.0,sharpe_ratio,-24.38804192864225
+rsi_mean_reversion__20__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,40.0,total_return_pct,-1.4856850447113157
+rsi_mean_reversion__20__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,40.0,max_drawdown_pct,-1.7136885967916182
+rsi_mean_reversion__20__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,20.0,oversold_threshold,40.0,profit_factor,0.747131574257793
+rsi_mean_reversion__30__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,20.0,sharpe_ratio,0.0
+rsi_mean_reversion__30__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,20.0,total_return_pct,0.0
+rsi_mean_reversion__30__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,20.0,max_drawdown_pct,0.0
+rsi_mean_reversion__30__20,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,20.0,profit_factor,0.0
+rsi_mean_reversion__30__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,25.0,sharpe_ratio,0.0
+rsi_mean_reversion__30__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,25.0,total_return_pct,0.0
+rsi_mean_reversion__30__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,25.0,max_drawdown_pct,0.0
+rsi_mean_reversion__30__25,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,25.0,profit_factor,0.0
+rsi_mean_reversion__30__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,30.0,sharpe_ratio,15.90519751633565
+rsi_mean_reversion__30__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,30.0,total_return_pct,0.3789216558973241
+rsi_mean_reversion__30__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,30.0,max_drawdown_pct,-0.3549880844983533
+rsi_mean_reversion__30__30,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,30.0,profit_factor,999999.0
+rsi_mean_reversion__30__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,35.0,sharpe_ratio,-2.454380188627288
+rsi_mean_reversion__30__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,35.0,total_return_pct,-0.1037871600021889
+rsi_mean_reversion__30__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,35.0,max_drawdown_pct,-0.500069649589463
+rsi_mean_reversion__30__35,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,35.0,profit_factor,1.8712720643878407
+rsi_mean_reversion__30__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,40.0,sharpe_ratio,-7.8904588028659814
+rsi_mean_reversion__30__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,40.0,total_return_pct,-0.452842779854723
+rsi_mean_reversion__30__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,40.0,max_drawdown_pct,-0.8148541104384344
+rsi_mean_reversion__30__40,rsi_mean_reversion,RSI Mean Reversion,rsi_length,30.0,oversold_threshold,40.0,profit_factor,1.0149586963618793
+vwap_mean_reversion__0p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.0,sharpe_ratio,10.58199356321278
+vwap_mean_reversion__0p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.0,total_return_pct,0.6819424954189302
+vwap_mean_reversion__0p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.0,max_drawdown_pct,-1.2568578423438725
+vwap_mean_reversion__0p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.0,profit_factor,6.3978483921732865
+vwap_mean_reversion__0p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.2,sharpe_ratio,2.00207494657371
+vwap_mean_reversion__0p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.2,total_return_pct,0.11516360352465949
+vwap_mean_reversion__0p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.2,max_drawdown_pct,-1.256857842343928
+vwap_mean_reversion__0p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.2,profit_factor,1.5431830987343154
+vwap_mean_reversion__0p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.4,sharpe_ratio,4.6323081366153955
+vwap_mean_reversion__0p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.4,total_return_pct,0.24694613253906095
+vwap_mean_reversion__0p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.4,max_drawdown_pct,-0.9360593619155422
+vwap_mean_reversion__0p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.4,profit_factor,3.1386317466892706
+vwap_mean_reversion__0p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.6,sharpe_ratio,-50.059581364749754
+vwap_mean_reversion__0p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.6,total_return_pct,-2.5005449200366403
+vwap_mean_reversion__0p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.6,max_drawdown_pct,-2.601568154799627
+vwap_mean_reversion__0p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.6,profit_factor,0.20536312073707588
+vwap_mean_reversion__0p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.8,sharpe_ratio,-197.4845108780877
+vwap_mean_reversion__0p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.8,total_return_pct,-8.95853644247493
+vwap_mean_reversion__0p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.8,max_drawdown_pct,-8.970248762736277
+vwap_mean_reversion__0p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,0.5,exit_threshold,0.8,profit_factor,0.054149121335007884
+vwap_mean_reversion__1__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.0,sharpe_ratio,18.650237697949027
+vwap_mean_reversion__1__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.0,total_return_pct,0.7796138119115836
+vwap_mean_reversion__1__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.0,max_drawdown_pct,-0.30280309526216076
+vwap_mean_reversion__1__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.0,profit_factor,999999.0
+vwap_mean_reversion__1__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.2,sharpe_ratio,15.00487088197361
+vwap_mean_reversion__1__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.2,total_return_pct,0.6023813254828925
+vwap_mean_reversion__1__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.2,max_drawdown_pct,-0.30280309526216076
+vwap_mean_reversion__1__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.2,profit_factor,999999.0
+vwap_mean_reversion__1__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.4,sharpe_ratio,12.912627238443687
+vwap_mean_reversion__1__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.4,total_return_pct,0.4252807084639043
+vwap_mean_reversion__1__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.4,max_drawdown_pct,-0.2820298239949337
+vwap_mean_reversion__1__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.4,profit_factor,999999.0
+vwap_mean_reversion__1__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.6,sharpe_ratio,11.017978224854808
+vwap_mean_reversion__1__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.6,total_return_pct,0.2579384277511698
+vwap_mean_reversion__1__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.6,max_drawdown_pct,-0.2820298239949337
+vwap_mean_reversion__1__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.6,profit_factor,999999.0
+vwap_mean_reversion__1__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.8,sharpe_ratio,5.949410858048761
+vwap_mean_reversion__1__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.8,total_return_pct,0.11525572662338668
+vwap_mean_reversion__1__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.8,max_drawdown_pct,-0.2820298239949337
+vwap_mean_reversion__1__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.0,exit_threshold,0.8,profit_factor,999999.0
+vwap_mean_reversion__1p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.0,sharpe_ratio,0.0
+vwap_mean_reversion__1p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.0,total_return_pct,0.0
+vwap_mean_reversion__1p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.0,max_drawdown_pct,0.0
+vwap_mean_reversion__1p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.0,profit_factor,0.0
+vwap_mean_reversion__1p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.2,sharpe_ratio,0.0
+vwap_mean_reversion__1p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.2,total_return_pct,0.0
+vwap_mean_reversion__1p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.2,max_drawdown_pct,0.0
+vwap_mean_reversion__1p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.2,profit_factor,0.0
+vwap_mean_reversion__1p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.4,sharpe_ratio,0.0
+vwap_mean_reversion__1p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.4,total_return_pct,0.0
+vwap_mean_reversion__1p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.4,max_drawdown_pct,0.0
+vwap_mean_reversion__1p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.4,profit_factor,0.0
+vwap_mean_reversion__1p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.6,sharpe_ratio,0.0
+vwap_mean_reversion__1p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.6,total_return_pct,0.0
+vwap_mean_reversion__1p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.6,max_drawdown_pct,0.0
+vwap_mean_reversion__1p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.6,profit_factor,0.0
+vwap_mean_reversion__1p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.8,sharpe_ratio,0.0
+vwap_mean_reversion__1p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.8,total_return_pct,0.0
+vwap_mean_reversion__1p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.8,max_drawdown_pct,0.0
+vwap_mean_reversion__1p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,1.5,exit_threshold,0.8,profit_factor,0.0
+vwap_mean_reversion__2__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.0,sharpe_ratio,0.0
+vwap_mean_reversion__2__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.0,total_return_pct,0.0
+vwap_mean_reversion__2__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.0,max_drawdown_pct,0.0
+vwap_mean_reversion__2__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.0,profit_factor,0.0
+vwap_mean_reversion__2__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.2,sharpe_ratio,0.0
+vwap_mean_reversion__2__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.2,total_return_pct,0.0
+vwap_mean_reversion__2__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.2,max_drawdown_pct,0.0
+vwap_mean_reversion__2__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.2,profit_factor,0.0
+vwap_mean_reversion__2__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.4,sharpe_ratio,0.0
+vwap_mean_reversion__2__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.4,total_return_pct,0.0
+vwap_mean_reversion__2__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.4,max_drawdown_pct,0.0
+vwap_mean_reversion__2__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.4,profit_factor,0.0
+vwap_mean_reversion__2__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.6,sharpe_ratio,0.0
+vwap_mean_reversion__2__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.6,total_return_pct,0.0
+vwap_mean_reversion__2__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.6,max_drawdown_pct,0.0
+vwap_mean_reversion__2__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.6,profit_factor,0.0
+vwap_mean_reversion__2__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.8,sharpe_ratio,0.0
+vwap_mean_reversion__2__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.8,total_return_pct,0.0
+vwap_mean_reversion__2__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.8,max_drawdown_pct,0.0
+vwap_mean_reversion__2__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.0,exit_threshold,0.8,profit_factor,0.0
+vwap_mean_reversion__2p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.0,sharpe_ratio,0.0
+vwap_mean_reversion__2p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.0,total_return_pct,0.0
+vwap_mean_reversion__2p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.0,max_drawdown_pct,0.0
+vwap_mean_reversion__2p5__0,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.0,profit_factor,0.0
+vwap_mean_reversion__2p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.2,sharpe_ratio,0.0
+vwap_mean_reversion__2p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.2,total_return_pct,0.0
+vwap_mean_reversion__2p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.2,max_drawdown_pct,0.0
+vwap_mean_reversion__2p5__0p2,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.2,profit_factor,0.0
+vwap_mean_reversion__2p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.4,sharpe_ratio,0.0
+vwap_mean_reversion__2p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.4,total_return_pct,0.0
+vwap_mean_reversion__2p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.4,max_drawdown_pct,0.0
+vwap_mean_reversion__2p5__0p4,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.4,profit_factor,0.0
+vwap_mean_reversion__2p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.6,sharpe_ratio,0.0
+vwap_mean_reversion__2p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.6,total_return_pct,0.0
+vwap_mean_reversion__2p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.6,max_drawdown_pct,0.0
+vwap_mean_reversion__2p5__0p6,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.6,profit_factor,0.0
+vwap_mean_reversion__2p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.8,sharpe_ratio,0.0
+vwap_mean_reversion__2p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.8,total_return_pct,0.0
+vwap_mean_reversion__2p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.8,max_drawdown_pct,0.0
+vwap_mean_reversion__2p5__0p8,vwap_mean_reversion,VWAP Mean Reversion,vwap_deviation_pct,2.5,exit_threshold,0.8,profit_factor,0.0
+ema_crossover_trend__5__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,50.0,sharpe_ratio,-75.77820029142174
+ema_crossover_trend__5__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,50.0,total_return_pct,-6.030702009169575
+ema_crossover_trend__5__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,50.0,max_drawdown_pct,-6.077872569289
+ema_crossover_trend__5__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,50.0,profit_factor,0.19317329391601334
+ema_crossover_trend__5__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,75.0,sharpe_ratio,-65.55620264168859
+ema_crossover_trend__5__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,75.0,total_return_pct,-5.143975121266486
+ema_crossover_trend__5__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,75.0,max_drawdown_pct,-5.162001944486738
+ema_crossover_trend__5__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,75.0,profit_factor,0.20627312146942567
+ema_crossover_trend__5__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,100.0,sharpe_ratio,-61.0188548626549
+ema_crossover_trend__5__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,100.0,total_return_pct,-4.766434720257228
+ema_crossover_trend__5__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,100.0,max_drawdown_pct,-4.784533292784654
+ema_crossover_trend__5__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,100.0,profit_factor,0.21867188035775714
+ema_crossover_trend__5__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,125.0,sharpe_ratio,-55.86143149969925
+ema_crossover_trend__5__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,125.0,total_return_pct,-4.358701136333032
+ema_crossover_trend__5__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,125.0,max_drawdown_pct,-4.376877196202433
+ema_crossover_trend__5__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,125.0,profit_factor,0.2158503051170035
+ema_crossover_trend__5__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,150.0,sharpe_ratio,-49.626054388698336
+ema_crossover_trend__5__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,150.0,total_return_pct,-3.852713827342902
+ema_crossover_trend__5__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,150.0,max_drawdown_pct,-3.870986047090219
+ema_crossover_trend__5__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,5.0,slow_ema,150.0,profit_factor,0.23250775417940583
+ema_crossover_trend__10__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,50.0,sharpe_ratio,-55.41692408224836
+ema_crossover_trend__10__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,50.0,total_return_pct,-4.304498216531227
+ema_crossover_trend__10__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,50.0,max_drawdown_pct,-4.322684577343095
+ema_crossover_trend__10__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,50.0,profit_factor,0.22621643008584216
+ema_crossover_trend__10__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,75.0,sharpe_ratio,-58.886515100211994
+ema_crossover_trend__10__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,75.0,total_return_pct,-4.569794082650203
+ema_crossover_trend__10__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,75.0,max_drawdown_pct,-4.587930025560971
+ema_crossover_trend__10__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,75.0,profit_factor,0.21157390966454517
+ema_crossover_trend__10__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,100.0,sharpe_ratio,-58.86454133950068
+ema_crossover_trend__10__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,100.0,total_return_pct,-4.5723202321434115
+ema_crossover_trend__10__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,100.0,max_drawdown_pct,-4.601237636230493
+ema_crossover_trend__10__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,100.0,profit_factor,0.22265889967967087
+ema_crossover_trend__10__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,125.0,sharpe_ratio,-62.65504287181157
+ema_crossover_trend__10__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,125.0,total_return_pct,-4.871588340083466
+ema_crossover_trend__10__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,125.0,max_drawdown_pct,-4.889666928791014
+ema_crossover_trend__10__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,125.0,profit_factor,0.16557035415748728
+ema_crossover_trend__10__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,150.0,sharpe_ratio,-51.278510873075604
+ema_crossover_trend__10__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,150.0,total_return_pct,-3.981453202871965
+ema_crossover_trend__10__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,150.0,max_drawdown_pct,-3.999700956466834
+ema_crossover_trend__10__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,10.0,slow_ema,150.0,profit_factor,0.16799276761199167
+ema_crossover_trend__15__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,50.0,sharpe_ratio,-51.008081498522245
+ema_crossover_trend__15__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,50.0,total_return_pct,-3.959267484621487
+ema_crossover_trend__15__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,50.0,max_drawdown_pct,-3.9775194544801273
+ema_crossover_trend__15__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,50.0,profit_factor,0.18353226652126498
+ema_crossover_trend__15__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,75.0,sharpe_ratio,-57.895809523100944
+ema_crossover_trend__15__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,75.0,total_return_pct,-4.481637439884622
+ema_crossover_trend__15__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,75.0,max_drawdown_pct,-4.4997901364409065
+ema_crossover_trend__15__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,75.0,profit_factor,0.21793804847074957
+ema_crossover_trend__15__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,100.0,sharpe_ratio,-53.998526743327126
+ema_crossover_trend__15__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,100.0,total_return_pct,-4.1743723022372725
+ema_crossover_trend__15__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,100.0,max_drawdown_pct,-4.192583392705007
+ema_crossover_trend__15__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,100.0,profit_factor,0.19842572409905584
+ema_crossover_trend__15__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,125.0,sharpe_ratio,-51.38396324641767
+ema_crossover_trend__15__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,125.0,total_return_pct,-4.003970580882155
+ema_crossover_trend__15__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,125.0,max_drawdown_pct,-4.022214055183304
+ema_crossover_trend__15__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,125.0,profit_factor,0.20058534132343184
+ema_crossover_trend__15__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,150.0,sharpe_ratio,-42.62934177226671
+ema_crossover_trend__15__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,150.0,total_return_pct,-3.3606875830860417
+ema_crossover_trend__15__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,150.0,max_drawdown_pct,-3.37905330949394
+ema_crossover_trend__15__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,15.0,slow_ema,150.0,profit_factor,0.2788506210132676
+ema_crossover_trend__20__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,50.0,sharpe_ratio,-55.468414506598805
+ema_crossover_trend__20__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,50.0,total_return_pct,-4.31968237278586
+ema_crossover_trend__20__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,50.0,max_drawdown_pct,-4.337865847939149
+ema_crossover_trend__20__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,50.0,profit_factor,0.19932388080302998
+ema_crossover_trend__20__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,75.0,sharpe_ratio,-53.20691718140574
+ema_crossover_trend__20__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,75.0,total_return_pct,-4.092194076177291
+ema_crossover_trend__20__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,75.0,max_drawdown_pct,-4.11042078412801
+ema_crossover_trend__20__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,75.0,profit_factor,0.20396430115369998
+ema_crossover_trend__20__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,100.0,sharpe_ratio,-53.263412311149516
+ema_crossover_trend__20__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,100.0,total_return_pct,-4.137197549702565
+ema_crossover_trend__20__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,100.0,max_drawdown_pct,-4.155415705010867
+ema_crossover_trend__20__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,100.0,profit_factor,0.1798195395940965
+ema_crossover_trend__20__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,125.0,sharpe_ratio,-33.99978715394687
+ema_crossover_trend__20__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,125.0,total_return_pct,-2.649067790861237
+ema_crossover_trend__20__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,125.0,max_drawdown_pct,-2.649067790861237
+ema_crossover_trend__20__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,125.0,profit_factor,0.2814836003014044
+ema_crossover_trend__20__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,150.0,sharpe_ratio,-33.82852421425751
+ema_crossover_trend__20__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,150.0,total_return_pct,-2.6576979145116586
+ema_crossover_trend__20__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,150.0,max_drawdown_pct,-2.6576979145116586
+ema_crossover_trend__20__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,20.0,slow_ema,150.0,profit_factor,0.3543505526045073
+ema_crossover_trend__25__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,50.0,sharpe_ratio,-47.12528066012513
+ema_crossover_trend__25__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,50.0,total_return_pct,-3.6420706057792684
+ema_crossover_trend__25__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,50.0,max_drawdown_pct,-3.6603828570176855
+ema_crossover_trend__25__50,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,50.0,profit_factor,0.2338340194258066
+ema_crossover_trend__25__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,75.0,sharpe_ratio,-59.05560733594447
+ema_crossover_trend__25__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,75.0,total_return_pct,-4.571277727937306
+ema_crossover_trend__25__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,75.0,max_drawdown_pct,-4.589413388890106
+ema_crossover_trend__25__75,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,75.0,profit_factor,0.16578705564334847
+ema_crossover_trend__25__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,100.0,sharpe_ratio,-36.929460607822676
+ema_crossover_trend__25__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,100.0,total_return_pct,-2.887858508358121
+ema_crossover_trend__25__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,100.0,max_drawdown_pct,-2.887858508358121
+ema_crossover_trend__25__100,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,100.0,profit_factor,0.23579736817495367
+ema_crossover_trend__25__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,125.0,sharpe_ratio,-15.346400790822662
+ema_crossover_trend__25__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,125.0,total_return_pct,-1.2059741141861369
+ema_crossover_trend__25__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,125.0,max_drawdown_pct,-1.4426038928764262
+ema_crossover_trend__25__125,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,125.0,profit_factor,0.5539272816503144
+ema_crossover_trend__25__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,150.0,sharpe_ratio,-20.212218405187677
+ema_crossover_trend__25__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,150.0,total_return_pct,-1.5894126650660811
+ema_crossover_trend__25__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,150.0,max_drawdown_pct,-1.5894126650660811
+ema_crossover_trend__25__150,ema_crossover_trend,EMA Crossover Trend Following,fast_ema,25.0,slow_ema,150.0,profit_factor,0.4427354590912517

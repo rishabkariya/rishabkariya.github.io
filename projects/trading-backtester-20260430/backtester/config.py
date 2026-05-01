@@ -1,0 +1,13 @@
+from pathlib import Path
+
+
+PROJECT_DIR = Path(__file__).resolve().parents[1]
+RESULTS_DIR = PROJECT_DIR / "results"
+SOURCE_CSV = Path(r"C:\Users\risha\Downloads\BTCUSDT-1m-2026-04-28\BTCUSDT-1m-2026-04-28.csv")
+
+INITIAL_CAPITAL = 1_000_000.0
+TRANSACTION_COST_BPS = 2.0
+SLIPPAGE_BPS = 1.0
+ROLLING_SHARPE_WINDOW = 60
+MINUTES_PER_YEAR = 365 * 24 * 60
+
