@@ -19,7 +19,7 @@ import {
   YAxis,
 } from "recharts";
 
-const GITHUB_URL = "https://github.com/rishabkariya/limit-order-backtester";
+const GITHUB_URL = "https://github.com/Often-Skewed/trading-backtester";
 
 const numericFields = new Set([
   "param1_value",
