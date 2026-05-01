@@ -78,15 +78,19 @@ function fmtPct(value, digits = 2) {
 }
 
 function fmtMoney(value) {
-  return (Number(value) / SCALE).toLocaleString("en-US", {
-    maximumFractionDigits: 0,
+  return (Number(value || 0) / SCALE).toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
     style: "currency",
     currency: "USD",
   });
 }
 
 function fmtNum(value, digits = 2) {
-  return Number(value || 0).toFixed(digits);
+  const n = Number(value || 0);
+  if (n > 99) return "99+"; 
+  if (n < -99) return "-99+";
+  return n.toFixed(digits);
 }
 
 function Icon({ name }) {
@@ -346,9 +350,9 @@ function Details({ combo, curve, trades }) {
           <LineChart data={curve}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" hide />
-            <YAxis ticks={[-1, 0, 1]} tick={{ fontSize: 12 }} />
-            <Tooltip />
-            <Line type="stepAfter" dataKey="position" stroke="#7c3aed" strokeWidth={2} dot={false} />
+            <YAxis domain={[-1.2, 1.2]} ticks={[-1, 0, 1]} tick={{ fontSize: 12 }} />
+            <Tooltip formatter={(value) => [value, "Position"]} />
+            <Line type="stepAfter" dataKey="position" stroke="#7c3aed" strokeWidth={2} dot={false} isAnimationActive={false} />
           </LineChart>
         </ResponsiveContainer>
       </article>
@@ -421,6 +425,28 @@ export default function App() {
   const filteredStrategies = useMemo(() => {
     const q = query.trim().toLowerCase();
     return strategies
+      .map((s) => {
+        // If this is the selected strategy, override its stats with the currently selected combo's stats
+        if (s.strategy_id === selectedStrategyId && selectedComboId) {
+          const combo = sweep.find((c) => c.combo_id === selectedComboId);
+          if (combo) {
+            // parameter_sweep uses _pct columns for returns/drawdown, 
+            // but leaderboard expects decimal (0.01 for 1%) to match fmtPct
+            return {
+              ...s,
+              total_return: combo.total_return_pct / 100, 
+              sharpe: combo.sharpe_ratio,
+              max_drawdown: combo.max_drawdown_pct / 100,
+              win_rate: combo.win_rate_pct / 100,
+              profit_factor: combo.profit_factor,
+              trades: combo.total_trades,
+              param1_value: combo.param1_value,
+              param2_value: combo.param2_value,
+            };
+          }
+        }
+        return s;
+      })
       .filter((strategy) => !q || `${strategy.name} ${strategy.symbol} ${strategy.strategy_type}`.toLowerCase().includes(q))
       .filter((strategy) => strategy.sharpe >= minSharpe)
       .sort((a, b) => {
@@ -429,7 +455,7 @@ export default function App() {
         if (typeof av === "string") return sortDirection === "asc" ? av.localeCompare(bv) : bv.localeCompare(av);
         return sortDirection === "asc" ? av - bv : bv - av;
       });
-  }, [strategies, query, minSharpe, sortKey, sortDirection]);
+  }, [strategies, query, minSharpe, sortKey, sortDirection, selectedStrategyId, selectedComboId, sweep]);
 
   const selectedStrategy = strategies.find((strategy) => strategy.strategy_id === selectedStrategyId) || strategies[0];
   const selectedCombo = sweep.find((item) => item.combo_id === selectedComboId) || sweep.find((item) => item.strategy_id === selectedStrategy?.strategy_id);
