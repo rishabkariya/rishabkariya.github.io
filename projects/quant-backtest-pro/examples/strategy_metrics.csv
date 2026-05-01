@@ -1,0 +1,5 @@
+strategy_id,selected_combo_id,name,symbol,timeframe,strategy_type,param1_name,param1_value,param2_name,param2_value,total_return,cagr,sharpe,sortino,max_drawdown,win_rate,profit_factor,trades,avg_trade,volatility,exposure
+ema_crossover,ema_crossover__10__100,EMA Crossover,BTCUSDT,1m,Trend,fast_ema,10,slow_ema,100.0,-0.0008513575089373893,-0.2671966130041086,-24.264670320174442,-2.8586026749791325,-0.0008998199898757608,0.0,0.0,1,-599.786234739353,0.012808568522156704,0.5
+bollinger_mr,bollinger_mr__10__1p5,Bollinger Mean Reversion,BTCUSDT,1m,Mean Reversion,length,10,std_dev,1.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.5
+rsi_reversal,rsi_reversal__7__20,RSI Reversal,BTCUSDT,1m,Mean Reversion,length,7,threshold,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.5
+momentum,momentum__10__0p1,Trend Momentum,BTCUSDT,1m,Trend,window,10,threshold_pct,0.1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.5
