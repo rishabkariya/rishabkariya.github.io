@@ -30,7 +30,7 @@ import {
 } from "recharts";
 import "./styles.css";
 
-const CSV_URL = "/data/sqc_measurements.csv";
+const CSV_URL = "data/sqc_measurements.csv";
 const numberFields = ["sample", "measurement", "target", "lsl", "usl", "defects", "inspected", "downtime_minutes"];
 const palette = ["#0f766e", "#2563eb", "#dc2626", "#d97706", "#7c3aed", "#475569"];
 
