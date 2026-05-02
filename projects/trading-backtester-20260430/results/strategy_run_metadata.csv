@@ -1,2 +1,0 @@
-source_csv,initial_capital,transaction_cost_bps,slippage_bps,bar_size,strategies,skipped
-C:\Users\risha\Downloads\BTCUSDT-1m-2026-04-28\BTCUSDT-1m-2026-04-28.csv,1000000.0,2.0,1.0,1 minute,"Bollinger, RSI, VWAP, EMA crossover",Statistical arbitrage skipped per user simplification request.

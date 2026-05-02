@@ -252,14 +252,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-      filterProjects(tab.getAttribute('data-category'));
+      const category = tab.getAttribute('data-category');
+      sessionStorage.setItem('portfolio-project-filter', category);
+      filterProjects(category);
     });
   });
 
   // Initial filter on load
-  const activeTab = tabsContainer.querySelector('.filter-tab.active');
-  if (activeTab) {
-    filterProjects(activeTab.getAttribute('data-category'));
+  const savedCategory = sessionStorage.getItem('portfolio-project-filter') || 'all';
+  tabs.forEach(t => t.classList.remove('active'));
+  const activeTabToSet = Array.from(tabs).find(t => t.getAttribute('data-category') === savedCategory) || tabs[0];
+  if (activeTabToSet) {
+    activeTabToSet.classList.add('active');
+    filterProjects(savedCategory);
   }
 })();
 

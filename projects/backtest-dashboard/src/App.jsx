@@ -389,17 +389,17 @@ export default function App() {
   const [selectedComboId, setSelectedComboId] = useState("");
   const [query, setQuery] = useState("");
   const [minSharpe, setMinSharpe] = useState(-50);
-  const [sortKey, setSortKey] = useState("sharpe");          // matches heatmap default: sharpe_ratio
+  const [sortKey, setSortKey] = useState("total_return");          // Default to return
   const [sortDirection, setSortDirection] = useState("desc");
-  const [heatmapMetric, setHeatmapMetric] = useState("sharpe_ratio");
+  const [heatmapMetric, setHeatmapMetric] = useState("total_return_pct");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     Promise.all([
-      loadCsv("/data/strategy_metrics.csv"),
-      loadCsv("/data/parameter_sweep.csv"),
-      loadCsv("/data/strategy_equity.csv"),
-      loadCsv("/data/strategy_trades.csv"),
+      loadCsv("data/strategy_metrics.csv"),
+      loadCsv("data/parameter_sweep.csv"),
+      loadCsv("data/strategy_equity.csv"),
+      loadCsv("data/strategy_trades.csv"),
     ]).then(([metrics, sweepRows, equityRows, tradeRows]) => {
       setStrategies(metrics);
       setSweep(sweepRows);
