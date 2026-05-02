@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Papa from "papaparse";
 import {
   Area,
@@ -19,7 +19,15 @@ import {
   YAxis,
 } from "recharts";
 
-const GITHUB_URL = "https://github.com/rishabkariya/limit-order-backtester";
+const GITHUB_URL = "https://github.com/Often-Skewed/trading-backtester";
+
+// Maps heatmap metric keys → leaderboard sortKey column names
+const HEATMAP_TO_SORT = {
+  sharpe_ratio: "sharpe",
+  total_return_pct: "total_return",
+  max_drawdown_pct: "max_drawdown",
+  profit_factor: "profit_factor",
+};
 
 const numericFields = new Set([
   "param1_value",
@@ -43,6 +51,7 @@ const numericFields = new Set([
   "volatility",
   "exposure",
   "equity",
+  "initial_equity",
   "pnl",
   "drawdown",
   "rolling_sharpe",
@@ -71,26 +80,20 @@ async function loadCsv(path) {
   }).data;
 }
 
-const SCALE = 20000; // 1,000,000 raw ΓåÆ $50 displayed
-
 function fmtPct(value, digits = 2) {
   return `${(Number(value) * 100).toFixed(digits)}%`;
 }
 
 function fmtMoney(value) {
-  return (Number(value || 0) / SCALE).toLocaleString("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+  return Number(value).toLocaleString("en-IN", {
+    maximumFractionDigits: 0,
     style: "currency",
-    currency: "USD",
+    currency: "INR",
   });
 }
 
 function fmtNum(value, digits = 2) {
-  const n = Number(value || 0);
-  if (n > 99) return "99+"; 
-  if (n < -99) return "-99+";
-  return n.toFixed(digits);
+  return Number(value || 0).toFixed(digits);
 }
 
 function Icon({ name }) {
@@ -177,8 +180,7 @@ function StrategyTable({ strategies, selectedId, onSelect, sortKey, sortDirectio
   );
 }
 
-function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo }) {
-  const [metric, setMetric] = useState("total_return_pct");
+function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo, metric, onMetricChange }) {
   const rows = useMemo(() => sweep.filter((item) => item.strategy_id === strategy?.strategy_id), [sweep, strategy]);
   const xValues = [...new Set(rows.map((item) => item.param2_value))].sort((a, b) => Number(a) - Number(b));
   const yValues = [...new Set(rows.map((item) => item.param1_value))].sort((a, b) => Number(a) - Number(b));
@@ -218,7 +220,7 @@ function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo }) {
           <p className="panel-kicker">Parameter Heatmap</p>
           <h2>{strategy?.name}</h2>
         </div>
-        <select value={metric} onChange={(event) => setMetric(event.target.value)}>
+        <select value={metric} onChange={(event) => onMetricChange(event.target.value)}>
           <option value="sharpe_ratio">Sharpe</option>
           <option value="total_return_pct">Return</option>
           <option value="max_drawdown_pct">Max DD</option>
@@ -275,8 +277,9 @@ function Details({ combo, curve, trades }) {
           <ComposedChart data={curve}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" tick={{ fontSize: 12 }} minTickGap={26} />
-            <YAxis yAxisId="equity" domain={['auto', 'auto']} tickFormatter={(value) => `$${(value / SCALE).toFixed(2)}`} tick={{ fontSize: 12 }} />
+            <YAxis yAxisId="equity" tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
             <Tooltip formatter={(value, name) => [fmtMoney(value), name]} />
+            <Legend />
             <Line yAxisId="equity" type="monotone" dataKey="equity" name="Equity" stroke="#0f766e" strokeWidth={2.4} dot={false} />
           </ComposedChart>
         </ResponsiveContainer>
@@ -330,7 +333,7 @@ function Details({ combo, curve, trades }) {
           <BarChart data={trades}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="exit_date" hide />
-            <YAxis tickFormatter={(value) => `$${(value / SCALE).toFixed(2)}`} tick={{ fontSize: 12 }} />
+            <YAxis tickFormatter={(value) => `${Math.round(value / 1000)}k`} tick={{ fontSize: 12 }} />
             <Tooltip formatter={(value) => [fmtMoney(value), "Trade PnL"]} />
             <Bar dataKey="net_pnl" radius={[4, 4, 0, 0]}>
               {trades.map((trade) => (
@@ -350,9 +353,9 @@ function Details({ combo, curve, trades }) {
           <LineChart data={curve}>
             <CartesianGrid stroke="#dfe6ea" vertical={false} />
             <XAxis dataKey="date" hide />
-            <YAxis domain={[-1.2, 1.2]} ticks={[-1, 0, 1]} tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(value) => [value, "Position"]} />
-            <Line type="stepAfter" dataKey="position" stroke="#7c3aed" strokeWidth={2} dot={false} isAnimationActive={false} />
+            <YAxis ticks={[-1, 0, 1]} tick={{ fontSize: 12 }} />
+            <Tooltip />
+            <Line type="stepAfter" dataKey="position" stroke="#7c3aed" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </article>
@@ -386,20 +389,21 @@ export default function App() {
   const [selectedComboId, setSelectedComboId] = useState("");
   const [query, setQuery] = useState("");
   const [minSharpe, setMinSharpe] = useState(-50);
-  const [sortKey, setSortKey] = useState("total_return");
+  const [sortKey, setSortKey] = useState("sharpe");          // matches heatmap default: sharpe_ratio
   const [sortDirection, setSortDirection] = useState("desc");
+  const [heatmapMetric, setHeatmapMetric] = useState("sharpe_ratio");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     Promise.all([
-      loadCsv("./data/strategy_metrics.csv"),
-      loadCsv("./data/parameter_sweep.csv"),
-      loadCsv("./data/strategy_equity.csv"),
-      loadCsv("./data/strategy_trades.csv"),
+      loadCsv("/data/strategy_metrics.csv"),
+      loadCsv("/data/parameter_sweep.csv"),
+      loadCsv("/data/strategy_equity.csv"),
+      loadCsv("/data/strategy_trades.csv"),
     ]).then(([metrics, sweepRows, equityRows, tradeRows]) => {
       setStrategies(metrics);
       setSweep(sweepRows);
-      setCurves(equityRows);
+      setCurves(equityRows.map(row => ({ ...row, equity: row.equity - 980000 })));
       setTrades(tradeRows);
       setSelectedStrategyId(metrics[0]?.strategy_id || "");
       setSelectedComboId(metrics[0]?.selected_combo_id || "");
@@ -416,6 +420,15 @@ export default function App() {
     }
   }
 
+  function handleHeatmapMetric(metric) {
+    setHeatmapMetric(metric);
+    const leaderboardKey = HEATMAP_TO_SORT[metric];
+    if (leaderboardKey) {
+      setSortKey(leaderboardKey);
+      setSortDirection(leaderboardKey === "max_drawdown" ? "asc" : "desc");
+    }
+  }
+
   function handleStrategySelect(strategyId) {
     const strategy = strategies.find((item) => item.strategy_id === strategyId);
     setSelectedStrategyId(strategyId);
@@ -426,15 +439,14 @@ export default function App() {
     const q = query.trim().toLowerCase();
     return strategies
       .map((s) => {
-        // If this is the selected strategy, override its stats with the currently selected combo's stats
+        // When a heatmap cell is selected, override that strategy's leaderboard row
+        // with the selected combo's live stats so the two panels stay in sync
         if (s.strategy_id === selectedStrategyId && selectedComboId) {
           const combo = sweep.find((c) => c.combo_id === selectedComboId);
           if (combo) {
-            // parameter_sweep uses _pct columns for returns/drawdown, 
-            // but leaderboard expects decimal (0.01 for 1%) to match fmtPct
             return {
               ...s,
-              total_return: combo.total_return_pct / 100, 
+              total_return: combo.total_return_pct / 100,
               sharpe: combo.sharpe_ratio,
               max_drawdown: combo.max_drawdown_pct / 100,
               win_rate: combo.win_rate_pct / 100,
@@ -523,6 +535,8 @@ export default function App() {
           sweep={sweep}
           selectedComboId={selectedCombo?.combo_id}
           onSelectCombo={setSelectedComboId}
+          metric={heatmapMetric}
+          onMetricChange={handleHeatmapMetric}
         />
       </section>
 
