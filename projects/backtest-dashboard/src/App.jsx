@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+﻿import React, { useEffect, useMemo, useState } from "react";
 import Papa from "papaparse";
 import {
   Area,
@@ -22,23 +22,14 @@ import {
 const GITHUB_URL = "https://github.com/rishabkariya/limit-order-backtester";
 
 const numericFields = new Set([
-  "param1_value",
-  "param2_value",
   "total_return",
-  "total_return_pct",
   "cagr",
-  "cagr_pct",
   "sharpe",
-  "sharpe_ratio",
   "sortino",
-  "sortino_ratio",
   "max_drawdown",
-  "max_drawdown_pct",
   "win_rate",
-  "win_rate_pct",
   "profit_factor",
   "trades",
-  "total_trades",
   "avg_trade",
   "volatility",
   "exposure",
@@ -46,8 +37,7 @@ const numericFields = new Set([
   "pnl",
   "drawdown",
   "rolling_sharpe",
-  "position",
-  "close",
+  "qty",
   "entry_price",
   "exit_price",
   "net_pnl",
@@ -135,7 +125,7 @@ function StrategyTable({ strategies, selectedId, onSelect, sortKey, sortDirectio
               <th key={key}>
                 <button type="button" onClick={() => onSort(key)} className={sortKey === key ? "active-sort" : ""}>
                   <span>{label}</span>
-                  <b>{sortKey === key ? (sortDirection === "asc" ? "↑" : "↓") : "↕"}</b>
+                  <b>{sortKey === key ? (sortDirection === "asc" ? "Γåæ" : "Γåô") : "Γåò"}</b>
                 </button>
               </th>
             ))}
@@ -150,7 +140,7 @@ function StrategyTable({ strategies, selectedId, onSelect, sortKey, sortDirectio
             >
               <td>
                 <strong>{strategy.name}</strong>
-                <span>{strategy.symbol} · {strategy.timeframe}</span>
+                <span>{strategy.symbol} ┬╖ {strategy.timeframe}</span>
               </td>
               <td className={strategy.total_return >= 0 ? "positive" : "negative"}>{fmtPct(strategy.total_return)}</td>
               <td>{fmtNum(strategy.sharpe)}</td>
@@ -163,88 +153,6 @@ function StrategyTable({ strategies, selectedId, onSelect, sortKey, sortDirectio
         </tbody>
       </table>
     </div>
-  );
-}
-
-function Heatmap({ strategy, sweep, selectedComboId, onSelectCombo }) {
-  const [metric, setMetric] = useState("total_return_pct");
-  const rows = useMemo(() => sweep.filter((item) => item.strategy_id === strategy?.strategy_id || sweep.length > 0), [sweep, strategy]);
-  
-  // If no exact match for strategy_id, just show the first available sweep (for demonstration/restoration purposes)
-  const displayRows = useMemo(() => {
-    const matched = sweep.filter((item) => item.strategy_id === strategy?.strategy_id);
-    return matched.length > 0 ? matched : sweep;
-  }, [sweep, strategy]);
-
-  const xValues = [...new Set(displayRows.map((item) => item.param2_value))].sort((a, b) => Number(a) - Number(b));
-  const yValues = [...new Set(displayRows.map((item) => item.param1_value))].sort((a, b) => Number(a) - Number(b));
-  const values = displayRows.map((item) => Number(item[metric]));
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-
-  function getCellStyles(value) {
-    if (!Number.isFinite(value) || max === min) return { background: "#f8fafc", color: "#0f172a" };
-    let background, color;
-    if (value < 0) {
-      const norm = min < 0 ? Math.max(0, value / min) : 0;
-      const lightness = 95 - (norm * 50);
-      background = `hsl(345, 80%, ${lightness}%)`;
-      color = lightness < 60 ? "#ffffff" : "#0f172a";
-    } else {
-      const norm = max > 0 ? value / max : 0;
-      const lightness = 95 - (norm * 50);
-      background = `hsl(173, 78%, ${lightness}%)`;
-      color = lightness < 60 ? "#ffffff" : "#0f172a";
-    }
-    return { background, color };
-  }
-
-  function findCell(y, x) {
-    return displayRows.find((item) => item.param1_value === y && item.param2_value === x);
-  }
-
-  return (
-    <article className="heatmap-panel">
-      <div className="panel-head">
-        <div>
-          <p className="panel-kicker">Parameter Heatmap</p>
-          <h2>{strategy?.name || "Global Sweep"}</h2>
-        </div>
-        <select value={metric} onChange={(event) => setMetric(event.target.value)}>
-          <option value="sharpe_ratio">Sharpe</option>
-          <option value="total_return_pct">Return</option>
-          <option value="max_drawdown_pct">Max DD</option>
-          <option value="profit_factor">Profit Factor</option>
-        </select>
-      </div>
-      <div className="heatmap-scroll">
-        <div className="heatmap-grid" style={{ gridTemplateColumns: `86px repeat(${xValues.length}, 82px)` }}>
-          <span className="heatmap-axis">{displayRows[0]?.param1_name || "P1"}</span>
-          {xValues.map((x) => <span key={x} className="heatmap-axis">{displayRows[0]?.param2_name || "P2"}<br />{x}</span>)}
-          {yValues.map((y) => (
-            <React.Fragment key={y}>
-              <span className="heatmap-y">{y}</span>
-              {xValues.map((x) => {
-                const cell = findCell(y, x);
-                const value = cell ? Number(cell[metric]) : 0;
-                return (
-                  <button
-                    type="button"
-                    key={`${y}-${x}`}
-                    className={cell?.combo_id === selectedComboId ? "heat-cell selected" : "heat-cell"}
-                    style={cell?.combo_id === selectedComboId ? {} : getCellStyles(value)}
-                    onClick={() => cell && onSelectCombo(cell.combo_id)}
-                  >
-                    {value.toFixed(2)}
-                  </button>
-                );
-              })}
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
-      <p className="heatmap-note">Visualization of parameter sensitivity for the underlying model.</p>
-    </article>
   );
 }
 
@@ -376,11 +284,9 @@ function Details({ strategy, curve, trades }) {
 
 export default function App() {
   const [strategies, setStrategies] = useState([]);
-  const [sweep, setSweep] = useState([]);
   const [curves, setCurves] = useState([]);
   const [trades, setTrades] = useState([]);
   const [selectedId, setSelectedId] = useState("");
-  const [selectedComboId, setSelectedComboId] = useState("");
   const [query, setQuery] = useState("");
   const [minSharpe, setMinSharpe] = useState(0);
   const [sortKey, setSortKey] = useState("total_return");
@@ -390,12 +296,10 @@ export default function App() {
   useEffect(() => {
     Promise.all([
       loadCsv("./data/strategy_metrics.csv"),
-      loadCsv("./data/parameter_sweep.csv"),
       loadCsv("./data/strategy_equity.csv"),
       loadCsv("./data/strategy_trades.csv"),
-    ]).then(([metrics, sweepRows, equity, tradeRows]) => {
+    ]).then(([metrics, equity, tradeRows]) => {
       setStrategies(metrics);
-      setSweep(sweepRows);
       setCurves(equity);
       setTrades(tradeRows);
       setSelectedId(metrics[0]?.strategy_id || "");
@@ -485,12 +389,21 @@ export default function App() {
           />
         </article>
 
-        <Heatmap
-          strategy={selectedStrategy}
-          sweep={sweep}
-          selectedComboId={selectedComboId}
-          onSelectCombo={setSelectedComboId}
-        />
+        <article className="comparison-panel">
+          <div className="panel-head compact">
+            <h3>Return vs drawdown</h3>
+            <span>all strategies</span>
+          </div>
+          <ResponsiveContainer width="100%" height={260}>
+            <ScatterChart>
+              <CartesianGrid stroke="#dfe6ea" />
+              <XAxis dataKey="max_drawdown" name="Max DD" tickFormatter={(value) => fmtPct(value, 0)} tick={{ fontSize: 12 }} />
+              <YAxis dataKey="total_return" name="Return" tickFormatter={(value) => fmtPct(value, 0)} tick={{ fontSize: 12 }} />
+              <Tooltip formatter={(value, name) => [name === "Return" || name === "Max DD" ? fmtPct(value) : value, name]} />
+              <Scatter data={strategies} fill="#0f766e" isAnimationActive={false} />
+            </ScatterChart>
+          </ResponsiveContainer>
+        </article>
       </section>
 
       {selectedStrategy ? <Details strategy={selectedStrategy} curve={selectedCurve} trades={selectedTrades} /> : null}
