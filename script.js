@@ -294,6 +294,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
 
       sessionStorage.setItem('portfolio-project-filter', category);
+      const url = new URL(window.location.href);
+      url.searchParams.set('filter', category);
+      url.searchParams.delete('sub');
+      window.history.replaceState({}, '', url);
       filterProjects(category, 'all');
     });
   });
@@ -307,19 +311,42 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
           subTabs.forEach(st => st.classList.remove('active'));
           subTab.classList.add('active');
           const subCategory = subTab.getAttribute('data-sub-category');
+          const url = new URL(window.location.href);
+          url.searchParams.set('sub', subCategory);
+          window.history.replaceState({}, '', url);
           filterProjects(currentCategory, subCategory);
         });
       });
     }
   });
 
-  // Initial filter on load
-  const savedCategory = sessionStorage.getItem('portfolio-project-filter') || 'all';
+  // Initial filter on load — URL params take priority over sessionStorage
+  const params = new URLSearchParams(window.location.search);
+  const urlCategory = params.get('filter');
+  const urlSub      = params.get('sub');
+  const savedCategory = urlCategory || sessionStorage.getItem('portfolio-project-filter') || 'all';
+
   tabs.forEach(t => t.classList.remove('active'));
   const activeTabToSet = Array.from(tabs).find(t => t.getAttribute('data-category') === savedCategory) || tabs[0];
   if (activeTabToSet) {
     activeTabToSet.classList.add('active');
-    filterProjects(savedCategory);
+    filterProjects(savedCategory, 'all');
+  }
+
+  // Apply sub-filter if present in URL
+  if (urlSub && urlCategory) {
+    setTimeout(() => {
+      const bar = subFilterBars[urlCategory];
+      if (bar) {
+        const subTabs = bar.querySelectorAll('.sub-filter-tab');
+        subTabs.forEach(st => st.classList.remove('active'));
+        const matchSub = Array.from(subTabs).find(st => st.getAttribute('data-sub-category') === urlSub);
+        if (matchSub) {
+          matchSub.classList.add('active');
+          filterProjects(urlCategory, urlSub);
+        }
+      }
+    }, 80);
   }
 })();
 
