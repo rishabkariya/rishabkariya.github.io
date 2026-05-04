@@ -1673,10 +1673,14 @@ body::after {
   border-radius: 22px;
   padding: 1rem;
   box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .media-card-header {
   margin-bottom: 0.9rem;
+  flex-shrink: 0;
 }
 
 .media-card-header h2 {
@@ -1690,8 +1694,15 @@ body::after {
   font-size: 0.92rem;
 }
 
+.media-caption {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .blog-video {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
   display: block;
   border-radius: 16px;
   border: 1px solid var(--border-color);
