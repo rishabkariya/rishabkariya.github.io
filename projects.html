@@ -101,6 +101,20 @@
       <button class="filter-tab" data-category="in-progress">In Progress</button>
     </div>
 
+    <!-- Dashboards Sub-Filter Tabs -->
+    <div class="sub-filter-tabs" id="dashboardSubFilters" style="display: none;">
+      <button class="sub-filter-tab active" data-sub-category="all">All Dashboards</button>
+      <button class="sub-filter-tab" data-sub-category="dashboard-web">Web Apps</button>
+      <button class="sub-filter-tab" data-sub-category="dashboard-powerbi">Power BI / Excel</button>
+    </div>
+
+    <!-- Shipping Sub-Filter Tabs -->
+    <div class="sub-filter-tabs" id="shippingSubFilters" style="display: none;">
+      <button class="sub-filter-tab active" data-sub-category="all">All Shipping</button>
+      <button class="sub-filter-tab" data-sub-category="shipping-projects">Excel Models</button>
+      <button class="sub-filter-tab" data-sub-category="shipping-web">Web Apps</button>
+    </div>
+
     <div class="projects-grid" id="projectsGrid">
 
       <!-- Empty State -->
@@ -177,7 +191,7 @@
       </div>
 
       <!-- 3. Freight Pricing & Margin Optimization Model -->
-      <div class="project-card" data-categories="shipping">
+      <div class="project-card" data-categories="shipping, shipping-projects">
         <img src="projects/freight pricing and optmisationj/freight pricing.gif"
           alt="Freight Pricing & Margin Optimization Preview" class="project-image">
         <div class="project-body">
@@ -205,7 +219,7 @@
       </div>
 
       <!-- 4. EXIM Documentation Tracker -->
-      <div class="project-card" data-categories="shipping">
+      <div class="project-card" data-categories="shipping, shipping-projects">
         <img src="projects/documentation%20tracker/document%20tracker.gif" alt="EXIM Documentation Tracker"
           class="project-image">
         <div class="project-body">
@@ -339,7 +353,7 @@
       </div>
 
       <!-- 10. Import-Export Flow Site -->
-      <div class="project-card" data-categories="shipping">
+      <div class="project-card" data-categories="shipping, shipping-web">
         <img src="projects/import-export-flow-site/export-import.gif" alt="Import-Export Flow Preview"
           class="project-image">
         <div class="project-body">
@@ -539,7 +553,7 @@
       <!-- Dashboards Section -->
 
       <!-- 15. B2B CRM Dashboard -->
-      <div class="project-card" data-categories="dashboards">
+      <div class="project-card" data-categories="dashboards, dashboard-web">
         <img src="projects/crm-dashboard/crm-dashboard.gif" alt="CRM Dashboard Preview" class="project-image">
         <div class="project-body">
           <div class="project-title-row">
@@ -567,7 +581,7 @@
       </div>
 
       <!-- 16. HR Analytics Dashboard -->
-      <div class="project-card" data-categories="dashboards">
+      <div class="project-card" data-categories="dashboards, dashboard-web">
         <img src="projects/hr-analytics-dashboard/hr-dashboard.gif" alt="HR Dashboard Preview" class="project-image">
         <div class="project-body">
           <div class="project-title-row">
@@ -595,7 +609,7 @@
       </div>
 
       <!-- 17. SQC Dashboard -->
-      <div class="project-card" data-categories="dashboards">
+      <div class="project-card" data-categories="dashboards, dashboard-web">
         <img src="projects/sqc-dashboard/sqc-dashboard.gif" alt="SQC Dashboard Preview" class="project-image">
         <div class="project-body">
           <div class="project-title-row">
@@ -623,7 +637,7 @@
       </div>
 
       <!-- 18. Forwarder Dashboard -->
-      <div class="project-card" data-categories="shipping, dashboards">
+      <div class="project-card" data-categories="shipping, dashboards, dashboard-web, shipping-web">
         <img src="projects/Freight Dashboard/freight-forwarder.gif" alt="Forwarder Dashboard Preview"
           class="project-image">
         <div class="project-body">

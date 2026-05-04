@@ -213,8 +213,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   const tabs = tabsContainer.querySelectorAll('.filter-tab');
   const projects = projectsGrid.querySelectorAll('.project-card');
   const emptyState = document.getElementById('projectsEmptyState');
+
+  const subFilterBars = {
+    dashboards: document.getElementById('dashboardSubFilters'),
+    shipping: document.getElementById('shippingSubFilters')
+  };
+
+  let currentCategory = 'all';
+  let currentSubCategory = 'all';
   
-  function filterProjects(selectedCategory) {
+  function filterProjects(selectedCategory, selectedSubCategory = 'all') {
+    currentCategory = selectedCategory;
+    currentSubCategory = selectedSubCategory;
+
+    // Show/hide correct sub-filter bar
+    Object.keys(subFilterBars).forEach(cat => {
+      const bar = subFilterBars[cat];
+      if (bar) bar.style.display = (selectedCategory === cat) ? 'flex' : 'none';
+    });
+
     let visibleCount = 0;
     projects.forEach(project => {
       const categoriesData = project.getAttribute('data-categories');
@@ -225,7 +242,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       const isInProgress = categories.includes('in-progress');
       const lowerSelected = selectedCategory.toLowerCase();
       
-      if ((isAllTab && !isInProgress) || (!isAllTab && categories.includes(lowerSelected))) {
+      let shouldShow = false;
+
+      if (isAllTab) {
+        shouldShow = !isInProgress;
+      } else if (categories.includes(lowerSelected)) {
+        // Main category matches. Now check sub-category if applicable for supported categories.
+        if (subFilterBars[selectedCategory] && selectedSubCategory !== 'all') {
+          shouldShow = categories.includes(selectedSubCategory.toLowerCase());
+        } else {
+          shouldShow = true;
+        }
+      }
+      
+      if (shouldShow) {
         project.style.display = 'block';
         visibleCount++;
         project.style.animation = 'none';
@@ -253,9 +283,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       const category = tab.getAttribute('data-category');
+      
+      // Reset sub-filters for all bars when changing main category
+      Object.values(subFilterBars).forEach(bar => {
+        if (bar) {
+          const barTabs = bar.querySelectorAll('.sub-filter-tab');
+          barTabs.forEach(st => st.classList.remove('active'));
+          if (barTabs[0]) barTabs[0].classList.add('active');
+        }
+      });
+
       sessionStorage.setItem('portfolio-project-filter', category);
-      filterProjects(category);
+      filterProjects(category, 'all');
     });
+  });
+
+  // Attach listeners to all sub-filter tabs
+  Object.values(subFilterBars).forEach(bar => {
+    if (bar) {
+      const subTabs = bar.querySelectorAll('.sub-filter-tab');
+      subTabs.forEach(subTab => {
+        subTab.addEventListener('click', () => {
+          subTabs.forEach(st => st.classList.remove('active'));
+          subTab.classList.add('active');
+          const subCategory = subTab.getAttribute('data-sub-category');
+          filterProjects(currentCategory, subCategory);
+        });
+      });
+    }
   });
 
   // Initial filter on load

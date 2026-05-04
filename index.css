@@ -1765,3 +1765,49 @@ body::after {
     padding: 1.1rem;
   }
 }
+
+/* ===== SUB-FILTERS ===== */
+.sub-filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: -10px 0 30px;
+  opacity: 0;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+.sub-filter-tab {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sub-filter-tab:hover {
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}
+
+.sub-filter-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff !important;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+}
+
+[data-theme="dark"] .sub-filter-tab.active {
+  color: #000 !important;
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .sub-filter-tabs {
+    flex-wrap: wrap;
+  }
+}
